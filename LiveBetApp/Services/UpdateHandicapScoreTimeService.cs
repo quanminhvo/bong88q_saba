@@ -33,6 +33,9 @@ namespace LiveBetApp.Services
                         ProcessHandicapFhScoreTime(matchs[i], productsFhOfMatch);
                         ProcessHandicapScoreTimeBeforeLive(matchs[i], productsOfMatch);
                         ProcessHandicapScoreTimeFhBeforeLive(matchs[i], productsFhOfMatch);
+
+                        ProcessHandicapHistoryFullTime(matchs[i], productsOfMatch);
+                        ProcessHandicapHistoryFirstHalf(matchs[i], productsFhOfMatch);
                     }
                     Thread.Sleep(milisecond);
                 }
@@ -212,6 +215,70 @@ namespace LiveBetApp.Services
                 }
             }
 
+        }
+
+        private void ProcessHandicapHistoryFullTime(Match match, List<Product> products)
+        {
+            if (!DataStore.ProductHandicapFulltimeHistory.ContainsKey(match.MatchId))
+            {
+                DataStore.ProductHandicapFulltimeHistory.Add(match.MatchId, new List<HandicapLifeTimeHistoryV3>());
+            }
+
+            if (match.LivePeriod == 1 || match.LivePeriod == 2 || match.IsHT)
+            {
+                var hdcProducts = products.Where(item => item.Bettype == Enums.BetType.FullTimeHandicap).OrderByDescending(item => Math.Abs(item.Odds1a100) + Math.Abs(item.Odds2a100)).Take(1).ToList();
+                if (hdcProducts != null && hdcProducts.Count > 0)
+                {
+                    Product product = hdcProducts.FirstOrDefault();
+                    if (product != null)
+                    {
+                        HandicapLifeTimeHistoryV3 history = new HandicapLifeTimeHistoryV3()
+                        {
+                            OddsId = product.OddsId,
+                            Odds1a = product.Odds1a100,
+                            Odds2a = product.Odds2a100,
+                            Hdp1 = product.Hdp1,
+                            Hdp2 = product.Hdp2,
+                            AwayScore = match.LiveAwayScore,
+                            HomeScore = match.LiveHomeScore,
+                            TimeSpanFromStart = match.TimeSpanFromStart
+                        };
+                        DataStore.ProductHandicapFulltimeHistory[match.MatchId].Add(history);
+                    }
+                }
+            }
+        }
+
+        private void ProcessHandicapHistoryFirstHalf(Match match, List<Product> products)
+        {
+            if (!DataStore.ProductHandicapFirstHalfHistory.ContainsKey(match.MatchId))
+            {
+                DataStore.ProductHandicapFirstHalfHistory.Add(match.MatchId, new List<HandicapLifeTimeHistoryV3>());
+            }
+
+            if (match.LivePeriod == 1 || match.LivePeriod == 2 || match.IsHT)
+            {
+                var hdcProducts = products.Where(item => item.Bettype == Enums.BetType.FirstHalfHandicap).OrderByDescending(item => Math.Abs(item.Odds1a100) + Math.Abs(item.Odds2a100)).Take(1).ToList();
+                if (hdcProducts != null && hdcProducts.Count > 0)
+                {
+                    Product product = hdcProducts.FirstOrDefault();
+                    if (product != null)
+                    {
+                        HandicapLifeTimeHistoryV3 history = new HandicapLifeTimeHistoryV3()
+                        {
+                            OddsId = product.OddsId,
+                            Odds1a = product.Odds1a100,
+                            Odds2a = product.Odds2a100,
+                            Hdp1 = product.Hdp1,
+                            Hdp2 = product.Hdp2,
+                            AwayScore = match.LiveAwayScore,
+                            HomeScore = match.LiveHomeScore,
+                            TimeSpanFromStart = match.TimeSpanFromStart
+                        };
+                        DataStore.ProductHandicapFirstHalfHistory[match.MatchId].Add(history);
+                    }
+                }
+            }
         }
 
         private void ProcessHandicapScoreTimeFhBeforeLive(Match match, List<Product> products)

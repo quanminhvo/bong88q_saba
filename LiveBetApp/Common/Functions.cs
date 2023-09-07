@@ -155,6 +155,10 @@ namespace LiveBetApp.Common
             DataStore.FirstShowIndex = new Dictionary<int, List<KeyValuePair<DateTime, int>>>();
             DataStore.MatchMaxBetNonRequest = new Dictionary<long, List<List<List<int>>>>();
             DataStore.Product1x2History = new Dictionary<long, List<List<Product>>>();
+
+            DataStore.ProductHandicapFulltimeHistory = new Dictionary<long, List<HandicapLifeTimeHistoryV3>>();
+            DataStore.ProductHandicapFirstHalfHistory = new Dictionary<long, List<HandicapLifeTimeHistoryV3>>();
+
             DataStore.MatchMaxBetRequest = new Dictionary<long, List<List<List<int>>>>();
             DataStore.Excel4th = new Dictionary<long, Dictionary<int, OverUnderSummary>>();
             DataStore.MatchOverUnderMoneyLine = new Dictionary<long, List<List<int>>>();
@@ -829,6 +833,17 @@ namespace LiveBetApp.Common
             );
 
             Common.Functions.WriteJsonObjectData(
+                Constants.BackUpPath_ProductHandicapFirstHalfHistory.Replace("\\", "\\" + dtStr + "\\"),
+                DataStore.ProductHandicapFirstHalfHistory
+            );
+
+            Common.Functions.WriteJsonObjectData(
+                Constants.BackUpPath_ProductHandicapFulltimefHistory.Replace("\\", "\\" + dtStr + "\\"),
+                DataStore.ProductHandicapFulltimeHistory
+            );
+
+
+            Common.Functions.WriteJsonObjectData(
                 Constants.BackUpPath_BlackList,
                 DataStore.Blacklist
             );
@@ -1233,6 +1248,16 @@ namespace LiveBetApp.Common
             DataStore.MatchOverUnderMoneyLine = Common.Functions.ReadJsonObjectData<
                 Dictionary<long, List<List<int>>>>(
                 Constants.BackUpPath_MatchOverUnderMoneyLine.Replace("\\", "\\" + dtStr + "\\")
+            );
+
+            DataStore.ProductHandicapFirstHalfHistory = Common.Functions.ReadJsonObjectData<
+                Dictionary<long, List<HandicapLifeTimeHistoryV3>>>(
+                Constants.BackUpPath_ProductHandicapFirstHalfHistory.Replace("\\", "\\" + dtStr + "\\")
+            );
+
+            DataStore.ProductHandicapFulltimeHistory = Common.Functions.ReadJsonObjectData<
+                Dictionary<long, List<HandicapLifeTimeHistoryV3>>>(
+                Constants.BackUpPath_ProductHandicapFulltimefHistory.Replace("\\", "\\" + dtStr + "\\")
             );
 
             DataStore.Blacklist = Common.Functions.ReadJsonObjectData<

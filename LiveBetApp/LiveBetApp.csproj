@@ -547,6 +547,7 @@
     <Compile Include="Models\DataModels\BetByTimming.cs" />
     <Compile Include="Models\DataModels\BetDirect.cs" />
     <Compile Include="Models\DataModels\BetFirstHalfByFulltime.cs" />
+    <Compile Include="Models\DataModels\HandicapLifeTimeHistoryV3.cs" />
     <Compile Include="Models\DataModels\MatchCodeHistory.cs" />
     <Compile Include="Models\DataModels\HandicapLifeTimeHistoryV2.cs" />
     <Compile Include="Models\DataModels\InUnderOutOver.cs" />

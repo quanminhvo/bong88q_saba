@@ -185,6 +185,9 @@ namespace LiveBetApp
         public static Dictionary<long, List<List<List<int>>>> MatchMaxBetRequest { get; set; } // matchid, livePeriod, hdpIndex, minute
         public static Dictionary<long, List<List<Product>>> Product1x2History { get; set; } // matchid, minute
 
+        public static Dictionary<long, List<HandicapLifeTimeHistoryV3>> ProductHandicapFulltimeHistory { get; set; } // <MatchId, <ProductId, [history1, history2, history3,...]>>
+        public static Dictionary<long, List<HandicapLifeTimeHistoryV3>> ProductHandicapFirstHalfHistory { get; set; } // <MatchId, <ProductId, [history1, history2, history3,...]>>
+
         public static Dictionary<long, Alert> Alert_Wd1 { get; set; }
         public static Dictionary<long, Alert> Alert_Wd2 { get; set; }
         public static Dictionary<long, Alert> Alert_Wd3 { get; set; }

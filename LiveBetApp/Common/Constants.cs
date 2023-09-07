@@ -117,6 +117,8 @@ namespace LiveBetApp.Common
         public static string BackUpPath_MatchMaxBetNonRequest = "Datastore\\MatchMaxBetNonRequest";
         public static string BackUpPath_MatchMaxBetRequest = "Datastore\\MatchMaxBetRequest";
         public static string BackUpPath_MatchOverUnderMoneyLine = "Datastore\\MatchOverUnderMoneyLine";
+        public static string BackUpPath_ProductHandicapFirstHalfHistory = "Datastore\\ProductHandicapFirstHalfHistory";
+        public static string BackUpPath_ProductHandicapFulltimefHistory = "Datastore\\ProductHandicapFulltimefHistory";
         public static string BackUpPath_BlackList = "Datastore\\BlackList";
         //
         //
