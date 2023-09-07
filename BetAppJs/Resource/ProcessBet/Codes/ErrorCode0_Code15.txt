@@ -1,0 +1,8 @@
+﻿{"ErrorCode":0,"ErrorMsg":null,"Redirect":null,"Data":{"ItemList":[{"Key":"206036689_a","DisplayOdds":"0.80","DisplayHDP":"2.00","BetID":"","TransId_Cash":"0","TransId_Bonus":"0",
+
+"Code":15,"Message":"Chúng tôi đang cập nhật tỷ lệ cược, vui lòng thử lại sau."
+
+,"Stake":"3","Stake_Cash":"0.00","Stake_Bonus":"0.00","ActualStake_Cash":"0.00","ActualStake_Bonus":"0.00","LiveHomeScore":0,"LiveAwayScore":0,"TicketStatus":1,"IsInPlay":false,"TotalPerBet":0,"FinalBalance":"0","CheckWaitingTicket":false,"ErrorCode":0,"TicketJson":null,"BetRecommendation":[{"matchid":31343076,"sporttype":1,"kickofftime":"2019-07-17 06:59:00"},{"matchid":31340180,"sporttype":1,"kickofftime":"2019-07-17 07:29:00"},{"matchid":31340330,"sporttype":1,"kickofftime":"2019-07-17 06:59:00"},{"matchid":31305430,"sporttype":2,"kickofftime":"2019-07-17 05:59:59"},{"matchid":31332062,"sporttype":5,"kickofftime":"2019-07-17 08:44:59"},{"matchid":31335023,"sporttype":6,"kickofftime":"2019-07-17 08:59:59"}]}]}}
+
+
+đánh tài/xỉu firstHalf

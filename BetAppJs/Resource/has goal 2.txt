@@ -1,0 +1,13 @@
+﻿42["p",["r1",[
+{"type":"m","matchid":30674557,"liveawayscore":1,"goalteam":"a"},
+{"type":"o","oddsid":200148945,"odds1a":0.69,"odds2a":-0.85},
+{"type":"o","oddsid":200148937,"hdp1":4,"odds1a":-0.75,"odds2a":0.57},
+{"type":"o","oddsid":200148919,"hdp1":2,"odds1a":-0.81,"odds2a":0.63},
+{"type":"o","oddsid":200148901,"com1":25,"comx":5.4,"com2":1.12},
+{"type":"o","oddsid":200148922,"odds1a":0.51,"odds2a":-0.67},
+{"type":"o","oddsid":200167009,"odds1a":0.97,"odds2a":0.87},
+{"type":"o","oddsid":200167389,"odds1a":-0.78,"odds2a":0.62},
+{"type":"o","oddsid":200167010,"hdp1":3.75,"odds1a":0.92,"odds2a":0.9},
+{"type":"o","oddsid":200167390,"hdp1":1.75,"odds1a":0.84,"odds2a":0.98},
+{"type":"m","matchid":30674557,"mc":35}
+],"90Mdo"]]

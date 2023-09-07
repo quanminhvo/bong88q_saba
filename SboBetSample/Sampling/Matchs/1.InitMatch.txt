@@ -1,0 +1,16 @@
+﻿/web-root/restricted/odds-display/today-data.aspx?od-param=2,1,1,1,1,2,1,2,0,1&fi=1&v=0&dl=0
+/web-root/restricted/odds-display/today-data.aspx?od-param=1,1,1,1,1,2,2,2,0,1&fi=1&v=0&dl=0
+
+[2893609,1,55419,'Nova Iguacu U20','Linhares FC U20','1.020-E143320010937',10,'01/10/2020 04:45',1,'',5]
+
+2893609					match id
+1						?
+55419					league id
+Nova Iguacu U20			home
+Linhares FC U20			away
+1.020-E143320010937		?
+10						?
+01/10/2020 04:45		?
+1						?
+						?
+5						?

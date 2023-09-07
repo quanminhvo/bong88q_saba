@@ -1,0 +1,35 @@
+﻿using System;
+using System.Collections.Generic;
+using System.Linq;
+using System.Web;
+
+namespace BetAppJs.Resource
+{
+    public class GetCookieSample
+    {
+        public void Main()
+        {
+
+            using (var driver = new ChromeDriver())
+            {
+                driver.Navigate().GoToUrl("https://www.5566688.com/login888.aspx?IsSSL=1");
+                driver.FindElementById("txtID").SendKeys("QZ378810379");
+                driver.FindElementById("txtPW").SendKeys("Asdf12345");
+                driver.FindElementByCssSelector("a.login_btn > span").Click();
+
+                Thread.Sleep(5000);
+
+                List<OpenQA.Selenium.Cookie> cookies = driver.Manage().Cookies.AllCookies.ToList();
+
+                if (cookies != null)
+                {
+                    foreach (OpenQA.Selenium.Cookie cookie in cookies)
+                    {
+                        System.Console.WriteLine(cookie.Name + ": " + cookie.Value);
+                    }
+                }
+
+            }
+        }
+    }
+}

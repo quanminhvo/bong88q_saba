@@ -1,0 +1,38 @@
+﻿ItemList[0][Type]: OU
+ItemList[0][Bettype]: 1
+ItemList[0][Oddsid]: 346576147
+ItemList[0][Odds]: 0.78
+ItemList[0][Line]: -2.5
+ItemList[0][Hdp1]: 2.5
+ItemList[0][Hdp2]: 0
+ItemList[0][Hscore]: 0
+ItemList[0][Ascore]: 0
+ItemList[0][Betteam]: h
+ItemList[0][Stake]: 3
+ItemList[0][Matchid]: 44589101
+ItemList[0][ChoiceValue]: Cerezo Osaka (N)
+ItemList[0][ErrorCode]: 0
+ItemList[0][Home]: Cerezo Osaka (N)
+ItemList[0][Away]: Guangzhou FC
+ItemList[0][Gameid]: 1
+ItemList[0][ProgramID]: 
+ItemList[0][RaceNum]: 0
+ItemList[0][Runner]: 0
+ItemList[0][PoolType]: 0
+ItemList[0][MRPercentage]: 
+ItemList[0][AcceptBetterOdds]: true
+ItemList[0][isQuickBet]: true
+ItemList[0][isTablet]: false
+ItemList[0][PhoneBettingSetting][IsGraphButton]: false
+ItemList[0][PhoneBettingSetting][GraphRemark]: 
+ItemList[0][PhoneBettingSetting][AdminID]: 0
+ItemList[0][PhoneBettingSetting][HideTicket]: false
+ItemList[0][PhoneBettingSetting][Using1X2AsiaHdp]: false
+ItemList[0][PhoneBettingSetting][Using1X2Hdp]: false
+ItemList[0][IsInPlay]: false
+ItemList[0][BonusID]: 0
+ItemList[0][BonusType]: 0
+ItemList[0][PromoID]: 0
+ItemList[0][sinfo]: 1E78Xm24B8
+ItemList[0][MMR]: 
+ItemList[0][parentMatchId]: 0

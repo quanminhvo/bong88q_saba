@@ -1,0 +1,1028 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="12.0" DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{33A81F1E-E89F-4E7E-B9AC-894837FDB9E9}</ProjectGuid>
+    <OutputType>WinExe</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>LiveBetApp</RootNamespace>
+    <AssemblyName>LiveBetApp</AssemblyName>
+    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <IsWebBootstrapper>false</IsWebBootstrapper>
+    <TargetFrameworkProfile />
+    <PublishUrl>E:\Deploy\bong88\</PublishUrl>
+    <Install>true</Install>
+    <InstallFrom>Disk</InstallFrom>
+    <UpdateEnabled>false</UpdateEnabled>
+    <UpdateMode>Foreground</UpdateMode>
+    <UpdateInterval>7</UpdateInterval>
+    <UpdateIntervalUnits>Days</UpdateIntervalUnits>
+    <UpdatePeriodically>false</UpdatePeriodically>
+    <UpdateRequired>false</UpdateRequired>
+    <MapFileExtensions>true</MapFileExtensions>
+    <ApplicationRevision>1</ApplicationRevision>
+    <ApplicationVersion>1.0.0.%2a</ApplicationVersion>
+    <UseApplicationTrust>false</UseApplicationTrust>
+    <PublishWizardCompleted>true</PublishWizardCompleted>
+    <BootstrapperEnabled>true</BootstrapperEnabled>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>bin\Debug\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <PlatformTarget>AnyCPU</PlatformTarget>
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestCertificateThumbprint>9D6A7F907F49F66E3032CCAF196795F650F1168E</ManifestCertificateThumbprint>
+  </PropertyGroup>
+  <PropertyGroup>
+    <ManifestKeyFile>LiveBetApp_TemporaryKey.pfx</ManifestKeyFile>
+  </PropertyGroup>
+  <PropertyGroup>
+    <GenerateManifests>true</GenerateManifests>
+  </PropertyGroup>
+  <PropertyGroup>
+    <SignManifests>false</SignManifests>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="AutoMapper, Version=5.0.2.0, Culture=neutral, PublicKeyToken=be96cd2c38ef1005, processorArchitecture=MSIL">
+      <HintPath>..\packages\AutoMapper.5.0.2\lib\net45\AutoMapper.dll</HintPath>
+    </Reference>
+    <Reference Include="Google.Apis, Version=1.40.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.40.1\lib\net45\Google.Apis.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth, Version=1.40.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.40.1\lib\net45\Google.Apis.Auth.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Auth.PlatformServices, Version=1.40.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Auth.1.40.1\lib\net45\Google.Apis.Auth.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Core, Version=1.40.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Core.1.40.1\lib\net45\Google.Apis.Core.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.Gmail.v1, Version=1.40.1.1613, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.Gmail.v1.1.40.1.1613\lib\net45\Google.Apis.Gmail.v1.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Google.Apis.PlatformServices, Version=1.40.1.0, Culture=neutral, PublicKeyToken=4b01fa6e34db77ab, processorArchitecture=MSIL">
+      <HintPath>..\packages\Google.Apis.1.40.1\lib\net45\Google.Apis.PlatformServices.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="Microsoft.Office.Interop.Excel, Version=15.0.0.0, Culture=neutral, PublicKeyToken=71e9bce111e9429c, processorArchitecture=MSIL">
+      <HintPath>..\packages\Microsoft.Office.Interop.Excel.15.0.4795.1000\lib\net20\Microsoft.Office.Interop.Excel.dll</HintPath>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </Reference>
+    <Reference Include="NAudio, Version=1.10.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\NAudio.1.10.0\lib\net35\NAudio.dll</HintPath>
+    </Reference>
+    <Reference Include="Newtonsoft.Json, Version=12.0.0.0, Culture=neutral, PublicKeyToken=30ad4fe6b2a6aeed, processorArchitecture=MSIL">
+      <HintPath>..\packages\Newtonsoft.Json.12.0.2\lib\net45\Newtonsoft.Json.dll</HintPath>
+      <Private>True</Private>
+    </Reference>
+    <Reference Include="PresentationCore" />
+    <Reference Include="System" />
+    <Reference Include="System.Configuration" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Web" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Deployment" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml" />
+    <Reference Include="WebDriver, Version=3.141.0.0, Culture=neutral, processorArchitecture=MSIL">
+      <HintPath>..\packages\Selenium.WebDriver.3.141.0\lib\net45\WebDriver.dll</HintPath>
+    </Reference>
+    <Reference Include="WindowsBase" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="Common\Config.cs" />
+    <Compile Include="Common\Constants.cs" />
+    <Compile Include="Common\Enums.cs" />
+    <Compile Include="Common\Functions.cs" />
+    <Compile Include="Forms\Alerts\AlertForm_12.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_12.Designer.cs">
+      <DependentUpon>AlertForm_12.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_13.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_13.Designer.cs">
+      <DependentUpon>AlertForm_13.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_14.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_14.Designer.cs">
+      <DependentUpon>AlertForm_14.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_17.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_17.Designer.cs">
+      <DependentUpon>AlertForm_17.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_16.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_16.Designer.cs">
+      <DependentUpon>AlertForm_16.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_18.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_18.Designer.cs">
+      <DependentUpon>AlertForm_18.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_19.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_19.Designer.cs">
+      <DependentUpon>AlertForm_19.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_1_2.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_1_2.Designer.cs">
+      <DependentUpon>AlertForm_1_2.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_20.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_20.Designer.cs">
+      <DependentUpon>AlertForm_20.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_3.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_3.Designer.cs">
+      <DependentUpon>AlertForm_3.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_4.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_4.Designer.cs">
+      <DependentUpon>AlertForm_4.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_10.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_10.Designer.cs">
+      <DependentUpon>AlertForm_10.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_11.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_11.Designer.cs">
+      <DependentUpon>AlertForm_11.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_15.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_15.Designer.cs">
+      <DependentUpon>AlertForm_15.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_9.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_9.Designer.cs">
+      <DependentUpon>AlertForm_9.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_8.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_8.Designer.cs">
+      <DependentUpon>AlertForm_8.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_7.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_7.Designer.cs">
+      <DependentUpon>AlertForm_7.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_6.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_6.Designer.cs">
+      <DependentUpon>AlertForm_6.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_5.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\AlertForm_5.Designer.cs">
+      <DependentUpon>AlertForm_5.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\MainAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\MainAlertForm.Designer.cs">
+      <DependentUpon>MainAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Alerts\MatchIuooAlert.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Alerts\MatchIuooAlert.Designer.cs">
+      <DependentUpon>MatchIuooAlert.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AutoBet\AllTimmingAutoBetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoBet\AllTimmingAutoBetForm.Designer.cs">
+      <DependentUpon>AllTimmingAutoBetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\AutoBet\AllAutoBetByHdpPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\AutoBet\AllAutoBetByHdpPriceForm.Designer.cs">
+      <DependentUpon>AllAutoBetByHdpPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetAfterGoodPrice\AddBetAfterGoodPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetAfterGoodPrice\AddBetAfterGoodPriceForm.Designer.cs">
+      <DependentUpon>AddBetAfterGoodPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetAfterGoodPrice\AllBetAfterGoodPrice.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetAfterGoodPrice\AllBetAfterGoodPrice.Designer.cs">
+      <DependentUpon>AllBetAfterGoodPrice.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByHdpClose\AddBetByHdpCloseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByHdpClose\AddBetByHdpCloseForm.Designer.cs">
+      <DependentUpon>AddBetByHdpCloseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByHdpClose\AllBetByHdpCloseForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByHdpClose\AllBetByHdpCloseForm.Designer.cs">
+      <DependentUpon>AllBetByHdpCloseForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByHdpPrice\AddBetByHdpPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByHdpPrice\AddBetByHdpPriceForm.Designer.cs">
+      <DependentUpon>AddBetByHdpPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByHdpPrice\AllBetByHdpPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByHdpPrice\AllBetByHdpPriceForm.Designer.cs">
+      <DependentUpon>AllBetByHdpPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByQuick\ConfirmQuickStake.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByQuick\ConfirmQuickStake.Designer.cs">
+      <DependentUpon>ConfirmQuickStake.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByTimming\AddBetByTimmingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByTimming\AddBetByTimmingForm.Designer.cs">
+      <DependentUpon>AddBetByTimmingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetByTimming\AllBetByTimmingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetByTimming\AllBetByTimmingForm.Designer.cs">
+      <DependentUpon>AllBetByTimmingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetFirstHalfByFulltime\AddBetFirstHalfByFulltimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetFirstHalfByFulltime\AddBetFirstHalfByFulltimeForm.Designer.cs">
+      <DependentUpon>AddBetFirstHalfByFulltimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetFirstHalfByFulltime\AllBetFirstHalfByFulltimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetFirstHalfByFulltime\AllBetFirstHalfByFulltimeForm.Designer.cs">
+      <DependentUpon>AllBetFirstHalfByFulltimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetHandicapByPrice\AddBetByHandicapPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetHandicapByPrice\AddBetByHandicapPriceForm.Designer.cs">
+      <DependentUpon>AddBetByHandicapPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetHandicapByPrice\AllBetByHandicapPriceForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetHandicapByPrice\AllBetByHandicapPriceForm.Designer.cs">
+      <DependentUpon>AllBetByHandicapPriceForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BetLogMessages.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BetLogMessages.Designer.cs">
+      <DependentUpon>BetLogMessages.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\BookmarksForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\BookmarksForm.Designer.cs">
+      <DependentUpon>BookmarksForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DirectBet\AllDirectBetForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DirectBet\AllDirectBetForm.Designer.cs">
+      <DependentUpon>AllDirectBetForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\DirectBet\ConfirmDirectBet.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\DirectBet\ConfirmDirectBet.Designer.cs">
+      <DependentUpon>ConfirmDirectBet.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ExportInspectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ExportInspectorForm.Designer.cs">
+      <DependentUpon>ExportInspectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\FindDecoyForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\FindDecoyForm.Designer.cs">
+      <DependentUpon>FindDecoyForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\GlobalShowtimeHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\GlobalShowtimeHistoryForm.Designer.cs">
+      <DependentUpon>GlobalShowtimeHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HandicapPricesForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HandicapPricesForm.Designer.cs">
+      <DependentUpon>HandicapPricesForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\HandicapPricesFullForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HandicapPricesFullForm.Designer.cs">
+      <DependentUpon>HandicapPricesFullForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\LicenseNotAvailableForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\LicenseNotAvailableForm.Designer.cs">
+      <DependentUpon>LicenseNotAvailableForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MainForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MainForm.Designer.cs">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="DataStore.cs" />
+    <Compile Include="Forms\MatchCodeHistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchCodeHistoryForm.Designer.cs">
+      <DependentUpon>MatchCodeHistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MatchMaxBetNonRequestForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MatchMaxBetNonRequestForm.Designer.cs">
+      <DependentUpon>MatchMaxBetNonRequestForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\MaxBetFullMatchForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\MaxBetFullMatchForm.Designer.cs">
+      <DependentUpon>MaxBetFullMatchForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreHalftimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreHalftimeForm.Designer.cs">
+      <DependentUpon>OverUnderScoreHalftimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreTimeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreTimeForm.Designer.cs">
+      <DependentUpon>OverUnderScoreTimeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreTimeV2Form.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\OverUnderScoreTimeV2Form.Designer.cs">
+      <DependentUpon>OverUnderScoreTimeV2Form.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PasswordForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PasswordForm.Designer.cs">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceChangeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceChangeForm.Designer.cs">
+      <DependentUpon>PriceChangeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceFreqForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceFreqForm.Designer.cs">
+      <DependentUpon>PriceFreqForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\PriceStepAlertForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\PriceStepAlertForm.Designer.cs">
+      <DependentUpon>PriceStepAlertForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Product1x2HistoryForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Product1x2HistoryForm.Designer.cs">
+      <DependentUpon>Product1x2HistoryForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductHistoryInspectorForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductHistoryInspectorForm.Designer.cs">
+      <DependentUpon>ProductHistoryInspectorForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductIdHistoryDetailByTypeForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductIdHistoryDetailByTypeForm.Designer.cs">
+      <DependentUpon>ProductIdHistoryDetailByTypeForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductIdHistoryDetailForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductIdHistoryDetailForm.Designer.cs">
+      <DependentUpon>ProductIdHistoryDetailForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\ProductIdsLogForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\ProductIdsLogForm.Designer.cs">
+      <DependentUpon>ProductIdsLogForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\AutoBetSettingForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\AutoBetSettingForm.Designer.cs">
+      <DependentUpon>AutoBetSettingForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\BackupScheduleForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\BackupScheduleForm.Designer.cs">
+      <DependentUpon>BackupScheduleForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\BlacklistForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\BlacklistForm.Designer.cs">
+      <DependentUpon>BlacklistForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\MatchFilter.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\MatchFilter.Designer.cs">
+      <DependentUpon>MatchFilter.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\Setting\SoundForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\Setting\SoundForm.Designer.cs">
+      <DependentUpon>SoundForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TimmingBet\AddTimmingBetOverUnderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TimmingBet\AddTimmingBetOverUnderForm.Designer.cs">
+      <DependentUpon>AddTimmingBetOverUnderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Forms\TimmingBet\AllTimingBetOverUnderForm.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\TimmingBet\AllTimingBetOverUnderForm.Designer.cs">
+      <DependentUpon>AllTimingBetOverUnderForm.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Models\DataModels\Alert.cs" />
+    <Compile Include="Models\DataModels\Authorization.cs" />
+    <Compile Include="Models\DataModels\BetAfterGoodPrice.cs" />
+    <Compile Include="Models\DataModels\BetByHdpClose.cs" />
+    <Compile Include="Models\DataModels\BetByHdpPrice.cs" />
+    <Compile Include="Models\DataModels\BetByQuick.cs" />
+    <Compile Include="Models\DataModels\BetByTimming.cs" />
+    <Compile Include="Models\DataModels\BetDirect.cs" />
+    <Compile Include="Models\DataModels\BetFirstHalfByFulltime.cs" />
+    <Compile Include="Models\DataModels\MatchCodeHistory.cs" />
+    <Compile Include="Models\DataModels\HandicapLifeTimeHistoryV2.cs" />
+    <Compile Include="Models\DataModels\InUnderOutOver.cs" />
+    <Compile Include="Models\DataModels\MatchIuooAlertItem.cs" />
+    <Compile Include="Models\DataModels\Blacklist.cs" />
+    <Compile Include="Models\DataModels\ConfigModel.cs" />
+    <Compile Include="Models\DataModels\ConfigModelSbo.cs" />
+    <Compile Include="Models\DataModels\GoalHistory.cs" />
+    <Compile Include="Models\DataModels\InUnderOutOverPrice.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Models\DataModels\IuooValue.cs" />
+    <Compile Include="Models\DataModels\License.cs" />
+    <Compile Include="Models\DataModels\LiveScoreMatch.cs" />
+    <Compile Include="Models\DataModels\Match.cs" />
+    <Compile Include="Models\DataModels\HandicapLifeTimeHistory.cs" />
+    <Compile Include="Models\DataModels\OuLifeTimeHistory.cs" />
+    <Compile Include="Models\DataModels\OverUnderScoreTimesV3Item.cs" />
+    <Compile Include="Models\DataModels\OverUnderScoreTimesV2Item.cs" />
+    <Compile Include="Models\DataModels\GlobalShowtimeHistory.cs" />
+    <Compile Include="Models\DataModels\PenHistory.cs" />
+    <Compile Include="Models\DataModels\ProcessBetModel.cs" />
+    <Compile Include="Models\DataModels\Product.cs" />
+    <Compile Include="Models\DataModels\ProductHistory.cs" />
+    <Compile Include="Models\DataModels\ProductIdsHistory.cs" />
+    <Compile Include="Models\DataModels\ProductIdLog.cs" />
+    <Compile Include="Models\DataModels\ProductStatusLog.cs" />
+    <Compile Include="Models\DataModels\SummaryItemGoalV2.cs" />
+    <Compile Include="Models\DataModels\TimmingBetOverUnder.cs" />
+    <Compile Include="Models\DataModels\TrackOverUnderBeforeLiveItem.cs" />
+    <Compile Include="Models\ViewModels\BetAfterGoodPrice.cs" />
+    <Compile Include="Models\ViewModels\BetByHdpPrice.cs" />
+    <Compile Include="Models\ViewModels\BetFirstHalfByFulltime.cs" />
+    <Compile Include="Models\ViewModels\ComboboxItem.cs" />
+    <Compile Include="Models\ViewModels\DecoyProduct.cs" />
+    <Compile Include="Models\ViewModels\Match.cs" />
+    <Compile Include="Models\ViewModels\Match1x2Product.cs" />
+    <Compile Include="Models\ViewModels\MatchMaxBetFull.cs" />
+    <Compile Include="Models\ViewModels\MatchMaxBet.cs" />
+    <Compile Include="Models\ViewModels\MatchTimmingAlert.cs" />
+    <Compile Include="Models\ViewModels\OuLifeTimeHistory.cs" />
+    <Compile Include="Models\ViewModels\OverUnderScoreRemainingTime.cs" />
+    <Compile Include="Models\DataModels\OverUnderSummary.cs" />
+    <Compile Include="Models\ViewModels\ProductStatusLogExport.cs" />
+    <Compile Include="Models\ViewModels\ProductStatusLog.cs" />
+    <Compile Include="Models\ViewModels\TimmingBetOverUnder.cs" />
+    <Compile Include="Program.cs" />
+    <Compile Include="Properties\AssemblyInfo.cs" />
+    <Compile Include="Services\AlertService20.cs" />
+    <Compile Include="Services\AlertService.cs" />
+    <Compile Include="Services\AuthorizationService.cs" />
+    <Compile Include="Services\AutoBet\Open250_Line18_1_2.cs" />
+    <Compile Include="Services\AutoBet\Open250_Line18_3.cs" />
+    <Compile Include="Services\AutoBet\Many_Goal_1H_Under_100_V1.cs" />
+    <Compile Include="Services\AutoBet\OverFirstHalfBySubtract.cs" />
+    <Compile Include="Services\BetAfterGoodPriceService.cs" />
+    <Compile Include="Services\BetByQuickService.cs" />
+    <Compile Include="Services\BetByTimmingService.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_c.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_b.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_a.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_d\Strategy_001_d.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_d\Strategy_001_d_Model.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_e\Strategy_001_e.cs" />
+    <Compile Include="Services\AutoBet\Strategy_001_e\Strategy_001_e_Model.cs" />
+    <Compile Include="Services\AutoBet\Strategy_002\Strategy_002_Model.cs" />
+    <Compile Include="Services\AutoBet\Strategy_002\Strategy_002.cs" />
+    <Compile Include="Services\BetByHdpCloseService.cs" />
+    <Compile Include="Services\BetByHdpPricesIuooService.cs" />
+    <Compile Include="Services\BetHandicapByPrice.cs" />
+    <Compile Include="Services\BetInUnderOutOverService.cs" />
+    <Compile Include="Services\BetByHdpPricesService.cs" />
+    <Compile Include="Services\BetFirstHalfByFulltimeService.cs" />
+    <Compile Include="Services\CoreService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\CoreServiceV2.cs" />
+    <Compile Include="Services\BetDirectService.cs" />
+    <Compile Include="Services\HasStreamingService.cs" />
+    <Compile Include="Services\InUnderOutOverService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\MailService.cs" />
+    <Compile Include="Services\ProcessBetService.cs" />
+    <Compile Include="Services\RebuildUrlService.cs" />
+    <Compile Include="Services\CoreServiceSbo.cs" />
+    <Compile Include="Services\TimmingBetOverUnderService.cs">
+      <SubType>Code</SubType>
+    </Compile>
+    <Compile Include="Services\UpdateHandicapScoreTimeService.cs" />
+    <Compile Include="Services\UpdateMaxBetNoneRequestService.cs" />
+    <Compile Include="Services\UpdateMaxBetService.cs" />
+    <Compile Include="Services\UpdateOverUnderScoreTimeFirstHalfService.cs" />
+    <Compile Include="Services\UpdateOverUnderScoreTimeService_Fast.cs" />
+    <Compile Include="Services\UpdateOverUnderScoreTimeService.cs" />
+    <Content Include="bookmarks\README.TXT">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Services\AutoBet\LastBoundaryBetService_300_275.jpg" />
+    <Content Include="sounds\alarm-1-with-reverberation.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\alarm-26718.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\alarm-fast-high-pitch-a3.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\bome.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\bip-bip.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\call-to-attention.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\dingdingding.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\emergency-alarm-with-reverb.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\explode3_e23e2.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\mixkit-arabian-mystery-harp-notification.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\mixkit-clear-announce.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\mixkit.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\oven-tick.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\preview.wav" />
+    <Content Include="sounds\whistle.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\alarm-fast-a1.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\alarm-fast-high-pitch.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\alert.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\insight-578.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\metallic-238.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="sounds\oringz-w429-349.wav">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_12.resx">
+      <DependentUpon>AlertForm_12.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_13.resx">
+      <DependentUpon>AlertForm_13.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_14.resx">
+      <DependentUpon>AlertForm_14.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_17.resx">
+      <DependentUpon>AlertForm_17.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_16.resx">
+      <DependentUpon>AlertForm_16.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_18.resx">
+      <DependentUpon>AlertForm_18.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_19.resx">
+      <DependentUpon>AlertForm_19.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_1_2.resx">
+      <DependentUpon>AlertForm_1_2.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_20.resx">
+      <DependentUpon>AlertForm_20.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_3.resx">
+      <DependentUpon>AlertForm_3.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_4.resx">
+      <DependentUpon>AlertForm_4.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_10.resx">
+      <DependentUpon>AlertForm_10.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_11.resx">
+      <DependentUpon>AlertForm_11.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_15.resx">
+      <DependentUpon>AlertForm_15.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_9.resx">
+      <DependentUpon>AlertForm_9.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_8.resx">
+      <DependentUpon>AlertForm_8.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_7.resx">
+      <DependentUpon>AlertForm_7.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_6.resx">
+      <DependentUpon>AlertForm_6.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\AlertForm_5.resx">
+      <DependentUpon>AlertForm_5.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\MainAlertForm.resx">
+      <DependentUpon>MainAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Alerts\MatchIuooAlert.resx">
+      <DependentUpon>MatchIuooAlert.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoBet\AllAutoBetByHdpPriceForm.resx">
+      <DependentUpon>AllAutoBetByHdpPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\AutoBet\AllTimmingAutoBetForm.resx">
+      <DependentUpon>AllTimmingAutoBetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetAfterGoodPrice\AddBetAfterGoodPriceForm.resx">
+      <DependentUpon>AddBetAfterGoodPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetAfterGoodPrice\AllBetAfterGoodPrice.resx">
+      <DependentUpon>AllBetAfterGoodPrice.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByHdpClose\AddBetByHdpCloseForm.resx">
+      <DependentUpon>AddBetByHdpCloseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByHdpClose\AllBetByHdpCloseForm.resx">
+      <DependentUpon>AllBetByHdpCloseForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByHdpPrice\AddBetByHdpPriceForm.resx">
+      <DependentUpon>AddBetByHdpPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByHdpPrice\AllBetByHdpPriceForm.resx">
+      <DependentUpon>AllBetByHdpPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByQuick\ConfirmQuickStake.resx">
+      <DependentUpon>ConfirmQuickStake.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByTimming\AddBetByTimmingForm.resx">
+      <DependentUpon>AddBetByTimmingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetByTimming\AllBetByTimmingForm.resx">
+      <DependentUpon>AllBetByTimmingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetFirstHalfByFulltime\AddBetFirstHalfByFulltimeForm.resx">
+      <DependentUpon>AddBetFirstHalfByFulltimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetFirstHalfByFulltime\AllBetFirstHalfByFulltimeForm.resx">
+      <DependentUpon>AllBetFirstHalfByFulltimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetHandicapByPrice\AddBetByHandicapPriceForm.resx">
+      <DependentUpon>AddBetByHandicapPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetHandicapByPrice\AllBetByHandicapPriceForm.resx">
+      <DependentUpon>AllBetByHandicapPriceForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BetLogMessages.resx">
+      <DependentUpon>BetLogMessages.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\BookmarksForm.resx">
+      <DependentUpon>BookmarksForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DirectBet\AllDirectBetForm.resx">
+      <DependentUpon>AllDirectBetForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\DirectBet\ConfirmDirectBet.resx">
+      <DependentUpon>ConfirmDirectBet.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ExportInspectorForm.resx">
+      <DependentUpon>ExportInspectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\FindDecoyForm.resx">
+      <DependentUpon>FindDecoyForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\GlobalShowtimeHistoryForm.resx">
+      <DependentUpon>GlobalShowtimeHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HandicapPricesForm.resx">
+      <DependentUpon>HandicapPricesForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HandicapPricesFullForm.resx">
+      <DependentUpon>HandicapPricesFullForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\LicenseNotAvailableForm.resx">
+      <DependentUpon>LicenseNotAvailableForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MainForm.resx">
+      <DependentUpon>MainForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchCodeHistoryForm.resx">
+      <DependentUpon>MatchCodeHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MatchMaxBetNonRequestForm.resx">
+      <DependentUpon>MatchMaxBetNonRequestForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\MaxBetFullMatchForm.resx">
+      <DependentUpon>MaxBetFullMatchForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OverUnderScoreHalftimeForm.resx">
+      <DependentUpon>OverUnderScoreHalftimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OverUnderScoreTimeForm.resx">
+      <DependentUpon>OverUnderScoreTimeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\OverUnderScoreTimeV2Form.resx">
+      <DependentUpon>OverUnderScoreTimeV2Form.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PasswordForm.resx">
+      <DependentUpon>PasswordForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceChangeForm.resx">
+      <DependentUpon>PriceChangeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceFreqForm.resx">
+      <DependentUpon>PriceFreqForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\PriceStepAlertForm.resx">
+      <DependentUpon>PriceStepAlertForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Product1x2HistoryForm.resx">
+      <DependentUpon>Product1x2HistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductHistoryInspectorForm.resx">
+      <DependentUpon>ProductHistoryInspectorForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductIdHistoryDetailByTypeForm.resx">
+      <DependentUpon>ProductIdHistoryDetailByTypeForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductIdHistoryDetailForm.resx">
+      <DependentUpon>ProductIdHistoryDetailForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\ProductIdsLogForm.resx">
+      <DependentUpon>ProductIdsLogForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\AutoBetSettingForm.resx">
+      <DependentUpon>AutoBetSettingForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\BackupScheduleForm.resx">
+      <DependentUpon>BackupScheduleForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\BlacklistForm.resx">
+      <DependentUpon>BlacklistForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\MatchFilter.resx">
+      <DependentUpon>MatchFilter.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\Setting\SoundForm.resx">
+      <DependentUpon>SoundForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimmingBet\AddTimmingBetOverUnderForm.resx">
+      <DependentUpon>AddTimmingBetOverUnderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\TimmingBet\AllTimingBetOverUnderForm.resx">
+      <DependentUpon>AllTimingBetOverUnderForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Properties\Resources.resx">
+      <Generator>ResXFileCodeGenerator</Generator>
+      <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+      <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <Compile Include="Properties\Resources.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
+    </Compile>
+    <None Include="ConfigSbo.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="Config.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="CppApp\main.cpp" />
+    <None Include="credentials.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Include="JsApp\betData.json" />
+    <Content Include="BetLog\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="Datastore\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="ErrorLog\readme.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsApp\NonSecureChrome.exe.lnk">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="License.txt">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <None Include="LiveBetApp_TemporaryKey.pfx" />
+    <None Include="packages.config" />
+    <None Include="Properties\Settings.settings">
+      <Generator>SettingsSingleFileGenerator</Generator>
+      <LastGenOutput>Settings.Designer.cs</LastGenOutput>
+    </None>
+    <Compile Include="Properties\Settings.Designer.cs">
+      <AutoGen>True</AutoGen>
+      <DependentUpon>Settings.settings</DependentUpon>
+      <DesignTimeSharedInput>True</DesignTimeSharedInput>
+    </Compile>
+    <None Include="token.json\Google.Apis.Auth.OAuth2.Responses.TokenResponse-user">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="App.config">
+      <SubType>Designer</SubType>
+    </None>
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="chromedriver.exe">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsApp\jquery-3.4.1.min.js">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+    <Content Include="JsApp\index.html">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+  <ItemGroup>
+    <BootstrapperPackage Include=".NETFramework,Version=v4.5">
+      <Visible>False</Visible>
+      <ProductName>Microsoft .NET Framework 4.5 %28x86 and x64%29</ProductName>
+      <Install>true</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Client.3.5">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1 Client Profile</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+    <BootstrapperPackage Include="Microsoft.Net.Framework.3.5.SP1">
+      <Visible>False</Visible>
+      <ProductName>.NET Framework 3.5 SP1</ProductName>
+      <Install>false</Install>
+    </BootstrapperPackage>
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\websocket-sharp\websocket-sharp.csproj">
+      <Project>{b357bac7-529e-4d81-a0d2-71041b19c8de}</Project>
+      <Name>websocket-sharp</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup />
+  <ItemGroup>
+    <COMReference Include="WMPLib">
+      <Guid>{6BF52A50-394A-11D3-B153-00C04F79FAA6}</Guid>
+      <VersionMajor>1</VersionMajor>
+      <VersionMinor>0</VersionMinor>
+      <Lcid>0</Lcid>
+      <WrapperTool>tlbimp</WrapperTool>
+      <Isolated>False</Isolated>
+      <EmbedInteropTypes>True</EmbedInteropTypes>
+    </COMReference>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+  <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
+       Other similar extension points exist, see Microsoft.Common.targets.
+  <Target Name="BeforeBuild">
+  </Target>
+  <Target Name="AfterBuild">
+  </Target>
+  -->
+</Project>

@@ -1,0 +1,23 @@
+﻿ActualStake_Bonus: "0.00"
+ActualStake_Cash: "0.00"
+BetID: ""
+CheckWaitingTicket: false
+Code: 2
+DisplayHDP: "3.75"
+DisplayOdds: "0.84"
+ErrorCode: 0
+FinalBalance: "0"
+IsInPlay: false
+Key: "204745144_h"
+LiveAwayScore: 1
+LiveHomeScore: 1
+Message: "Chúng tôi đang cập nhật tỷ lệ cược, vui lòng thử lại sau."
+Stake: "3"
+Stake_Bonus: "0.00"
+Stake_Cash: "0.00"
+TicketJson: null
+TicketStatus: 1
+TotalPerBet: 0
+TransId_Bonus: "0"
+TransId_Cash: "0"
+

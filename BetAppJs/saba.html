@@ -1,0 +1,37 @@
+﻿<script src="js/jquery-3.4.1.min.js"></script>
+<button onclick="bet()">asd</button>
+<script>
+    pingInterval = function (webSocket) {
+        setTimeout(function () {
+            webSocket.send("{\"reCheckin\":true,\"user\":{\"updateCoint\":true}}");
+            pingInterval(webSocket);
+        }, 58000);
+    }
+
+    bet = function () {
+        webSocket.send("{\"taixiu_turbo\":{\"cuoc\":{\"red\":true,\"taixiu\":true,\"select\":true,\"bet\":1}}}");
+    }
+</script>
+
+<script>
+
+    if (typeof jQuery != 'undefined') {
+        alert(jQuery.fn.jquery);
+    }
+
+    var webSocket = new WebSocket("wss://gsr.sabagame.com/websocket");
+
+    webSocket.onopen = function (event) {
+        webSocket.send("{\"authentication\":{\"username\":\"oneworks1_38555091\",\"data\":{\"isAuthenticated\": true,\"username\":\"oneworks1_38555091\",\"language\":\"vi-vn\",\"ss\":\"U2FsdGVkX1/f6vcIDOJGzx9zqCEFqhNvU706CV81mCV2uiNmhXWeDMfO1zhjG9EJza7mnkZOTs6CPBMbQxUDJnYeaqthrCppGi09J+zV7ow='\",\"isSSO\": true,\"time\":\"" + new Date().toISOString() + "\"}}}");
+        //webSocket.send("{'taixiu_turbo': {'view': true,'getLogs': true,'get_time':true}}");
+    };
+
+    webSocket.onmessage = function (event) {
+
+        console.log(event.data);
+
+    }
+
+    pingInterval(webSocket);
+
+</script>

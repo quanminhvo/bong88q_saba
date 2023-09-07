@@ -1,0 +1,16 @@
+﻿42["p",["r4",[
+{
+"type":"o",
+"oddsid":196426185,
+"oddsstatus":"closed"
+},
+{
+"type":"dm",
+"id":30297960,
+"matchid":30297960
+},
+{
+"type":"do",
+"id":196426185,
+"oddsid":196426185
+}],"F7JIL"]]

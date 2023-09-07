@@ -1,0 +1,2 @@
+﻿send: {"reCheckin":true,"user":{"updateCoint":true}}
+resp: {"user":{"red":200}}

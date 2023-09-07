@@ -1,0 +1,5 @@
+﻿MarketStatus ~ oddsstatus
+
+"running", 
+"suspend",
+"closeprice"

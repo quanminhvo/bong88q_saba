@@ -1,0 +1,5 @@
+﻿{"ErrorCode":0,"ErrorMsg":null,"Redirect":null,"Data":{"ItemList":[{"Key":"205379360_h","DisplayOdds":"0.98","DisplayHDP":"2.50","BetID":"","TransId_Cash":"0","TransId_Bonus":"0",
+
+"Code":2,"Message":"Chúng tôi đang cập nhật tỷ lệ cược, vui lòng thử lại sau."
+
+,"Stake":"100","Stake_Cash":"0.00","Stake_Bonus":"0.00","ActualStake_Cash":"0.00","ActualStake_Bonus":"0.00","LiveHomeScore":0,"LiveAwayScore":0,"TicketStatus":1,"IsInPlay":false,"TotalPerBet":0,"FinalBalance":"0","CheckWaitingTicket":false,"ErrorCode":0,"TicketJson":null,"BetRecommendation":[{"matchid":31280362,"sporttype":1,"kickofftime":"2019-07-13 11:29:00"},{"matchid":31283168,"sporttype":1,"kickofftime":"2019-07-13 13:59:00"},{"matchid":31280110,"sporttype":1,"kickofftime":"2019-07-13 11:59:00"},{"matchid":31227371,"sporttype":2,"kickofftime":"2019-07-13 11:44:59"},{"matchid":31286311,"sporttype":43,"kickofftime":"2019-07-13 12:57:08"},{"matchid":31267766,"sporttype":8,"kickofftime":"2019-07-13 13:04:59"}]}]}}

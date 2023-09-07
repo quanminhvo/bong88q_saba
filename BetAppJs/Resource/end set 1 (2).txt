@@ -1,0 +1,6 @@
+﻿index.html:96 42["p",["r1",[
+
+{"type":"o","oddsid":200148945,"odds1a":0.65,"odds2a":-0.81},
+{"type":"m","matchid":30674558,"csstatus":"1","isht":true,"liveperiod":0}
+
+],"91uYL"]]

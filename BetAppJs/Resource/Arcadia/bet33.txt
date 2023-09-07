@@ -1,0 +1,4 @@
+﻿send:
+42["bet",{"choice":"big","amount":1,"lang":"vi","gid":33}]
+resp:
+42["betRes",{"rid":"2911936","code":"00-000","msg":"success","pool":{"big":161,"small":311},"number":{"big":6,"small":15},"total":{"big":1,"small":0},"data":{"choice":"big","amount":1,"lang":"vi","gid":33,"uid":"670148","ucid":5,"actualUcid":5,"ip":"115.79.48.213, 103.99.51.97","id":"NOD82E8bvflSvr_XPEYs"},"gid":33}]

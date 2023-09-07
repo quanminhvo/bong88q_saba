@@ -1,0 +1,6 @@
+﻿index.html:96 42["p",["r1",[
+
+{"type":"m","matchid":30674558,"csstatus":"0","isht":false,"liveperiod":2,"livetimer":1559547270},
+{"type":"o","oddsid":200148944,"oddsstatus":"running"}
+
+],"92GBr"]]

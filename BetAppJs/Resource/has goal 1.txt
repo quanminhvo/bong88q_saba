@@ -1,0 +1,11 @@
+﻿42["p",["r61",[
+
+{"type":"o","oddsid":200120455,"odds1a":0.87,"odds2a":0.91,"oddsstatus":"closePrice"},
+{"type":"o","oddsid":200120442,"odds1a":0.92,"odds2a":0.84,"oddsstatus":"closePrice","hdp1":8.75},
+{"type":"m","matchid":30667171,"liveawayscore":2,"goalteam":"a"},
+{"type":"o","oddsid":200142570,"oddsstatus":"closePrice","odds1a":0.27,"odds2a":-0.49},
+{"type":"o","oddsid":200142571,"oddsstatus":"closePrice","hdp1":9,"odds1a":-0.78,"odds2a":0.54},
+{"type":"o","oddsid":199165403,"odds1a":0.85,"odds2a":-0.95},
+{"type":"o","oddsid":200149402,"odds1a":-0.69,"odds2a":0.59}
+
+],"Tvt5e"]]

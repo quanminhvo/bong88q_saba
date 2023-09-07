@@ -1,0 +1,8 @@
+{type: "o", oddsid: 197368417, odds1a: -0.4, odds2a: 0.16}
+{type: "o", oddsid: 197368778, odds1a: -0.3, odds2a: 0.06}
+
+
+
+oddsid: ...
+odds1a: over
+odds2a: under

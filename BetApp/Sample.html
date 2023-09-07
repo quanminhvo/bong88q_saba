@@ -1,0 +1,104 @@
+﻿<script>
+    alert(123);
+
+
+    //var sidRequest = httpGet('https://agnj3.5566688.com/socket.io/?gid=ece42c6b3317b5ed&token=280537ba-830d-44ae-898c-ac706c2231fa&id=33181355&rid=2&EIO=3&transport=polling&t=MgHQX-H');
+
+    // https://agnj3.5566688.com/socket.io/?gid=ec8c3d4c1248307a&token=d02386dd-f478-48db-98db-4414f78604dc&id=33181355&rid=2&EIO=3&transport=polling&t=MgRUPE3
+
+    var timmerIsSet = false;
+
+    var webSocket = new WebSocket("wss://agnj3.5566688.com/socket.io/?gid=075281183435c3c0&token=b906772c-c595-4665-ac49-42cc788dfa81&id=33181355&rid=2&EIO=3&transport=websocket&sid=FQpf7YCyzai91siSAXzy");
+
+    webSocket.onopen = function (event) {
+        webSocket.send("2probe");
+    };
+
+    webSocket.onmessage = function (event) {
+        console.log(event.data);
+        if (event.data == "3probe") {
+            webSocket.send("5");
+            //webSocket.send('42["subscribe","menu",[{"id":"c0","rev":"","condition":{}}]]');
+            //webSocket.send('42["subscribe","odds",{"id":"c1","rev":0,"condition":{"mini":1,"bettype":[1,20,501]}}]');
+            webSocket.send('42["subscribe","odds",{"id":"c2","rev":0,"condition":{"sporttype":1,"marketid":"L","bettype":[1,3,5,7,8,15,301,302,303,304],"sorting":"n"}}]');
+            //webSocket.send('42["subscribe","odds",{"id":"c3","rev":0,"condition":{"sporttype":1,"marketid":"T","bettype":[1,3,5,7,8,15,301,302,303,304],"sorting":"n"}}]');
+        }
+    }
+
+    pingInterval(webSocket);
+    keepConnection();
+
+    function pingInterval(webSocket) {
+        setTimeout(function () {
+            webSocket.send("2");
+            pingInterval(webSocket);
+        }, 25000);
+    }
+
+    function httpGet(theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", theUrl, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
+
+    function keepConnection() {
+
+
+        setTimeout(function () {
+            var http = new XMLHttpRequest();
+            var url = 'https://pmwl.5566688.com/SingleLobbyWebPortal/Common/SetTimeOut';
+            var params = 'SBCustID=33181355';
+            http.open('POST', url, true);
+
+            http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    console.log(http.responseText);
+                }
+            }
+            http.send(params);
+
+            keepConnection();
+        }, 600000);
+
+
+    }
+
+</script>
+
+<script>
+    var token_buffer = false;
+    var token_fail = false;
+    function SetTimeOut() {
+        
+
+        if (token_fail === false) {
+            $.post("../" + Directory + "/Common/SetTimeOut", { SBCustID: sbCustID }, function (data) {
+                if (data.strSetTimeOut !== "") {
+                    var ErrCode = data.ErrorCode;
+                    var ErrMessage = data.ErrorMessage;
+
+                    if (ErrCode !== "" || ErrCode !== '') {
+                        Error_Analytics(ErrCode);
+
+                        location.href = "Account/MiniReLoad?ErrCode=" + ErrCode + "&ErrMessage=" + ErrMessage;
+                        //if (token_buffer) {
+                        //    token_fail = true;
+                        //    location.href = "Account/MiniReLoad?ErrCode=" + ErrCode + "&ErrMessage=" + ErrMessage;
+                        //} else {
+                        //    token_buffer = true;
+                        //}
+                    } else {
+                        //token_buffer = false;
+                    }
+                } else {
+                    location.href = "Account/MiniClosed";
+                }
+            });
+        }
+    }
+
+    var MyInterval = setInterval("SetTimeOut()", 600000);
+</script>

@@ -1,0 +1,4 @@
+﻿{"authentication":{"username":"oneworks1_39051199","data":{"isAuthenticated":true,"username":"oneworks1_39051199","language":"vi-vn","ss":"U2FsdGVkX19V4/xzgAMrlaq67Vl4HyCf2CLSHBaEqg/zB0LK38Wul8BJ2SuobzfKIUFIOdgU082o/ERq8pMa8356kWoGDE7nwraAwb1sGUM=","isSSO":true,"time":"2020-05-27T03:34:59.818Z"}}}	298	
+10:35:03.017
+{"Authorized":true,"user":{"security":{"login":0},"joinedOn":"2020-05-26T06:09:14.622Z","email":"","cmt":"","red":200,"ketSat":0,"xu":0,"avatarId":7,"currency":"UT","name":"utto","UID":16066,"level":1,"vipNext":100,"vipHT":0,"ss":{"isAuthenticated":true,"username":"oneworks1_39051199","language":"vi-vn","ss":"U2FsdGVkX18yTrQ0z4mEeVmzKO2JAXQwhFbMfuWLx2HxVZYsNCZ8/N3qCrzFYfHg/Z6qwvWoGDE4HnpLKcdbBRWi52fej2jN068ULxezuz8=","isSSO":true,"time":"2020-05-27T03:35:02.692Z"},"phone":""},"message":{"news":1}}	502	
+10:35:03.168

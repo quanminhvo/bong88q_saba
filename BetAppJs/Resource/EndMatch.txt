@@ -1,0 +1,6 @@
+﻿42["p",["r2",[{"type":"o","oddsid":199199060,"odds1a":0.87,"odds2a":-0.95},{"type":"o","oddsid":199184339,"oddsstatus":"suspend","odds1a":0.98,"odds2a":0.82}],"4u3v1"]]
+42["p",["r2",[{"type":"o","oddsid":199373824,"oddsstatus":"closed"},{"type":"o","oddsid":199459574,"oddsstatus":"closed"},{"type":"o","oddsid":199459573,"oddsstatus":"closed"},{"type":"o","oddsid":199373826,"oddsstatus":"closed"},{"type":"do","id":199373824,"oddsid":199373824},{"type":"do","id":199459574,"oddsid":199459574},{"type":"do","id":199459573,"oddsid":199459573},{"type":"dm","id":30587114,"matchid":30587114},{"type":"do","id":199373826,"oddsid":199373826}],"2NiSM"]]
+42["p",["r3",[{"type":"o","oddsid":199259441,"oddsstatus":"closed","odds1a":0,"odds2a":0},{"type":"dm","id":30570529,"matchid":30570529},{"type":"do","id":199259441,"oddsid":199259441}],"4uacV"]]
+
+
+

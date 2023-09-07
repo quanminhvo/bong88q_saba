@@ -1,0 +1,49 @@
+﻿<script src="js/jquery-3.4.1.min.js"></script>
+
+<script>
+    pingInterval = function (webSocket) {
+        setTimeout(function () {
+            webSocket.send("2");
+            pingInterval(webSocket);
+        }, 9000);
+    }
+</script>
+
+<script>
+
+    if (typeof jQuery != 'undefined') {
+        alert(jQuery.fn.jquery);
+    }
+
+    var webSocket = new WebSocket("wss://game.p2poker.net/mini/?uid=670148&ucid=5&_sessid=UlVaTlRaellra003TEVFWHNWejVYTTcreXU3QjFCSDVHTlIySlZqdEVweGF6aXBPNW1WdWJXak9WTU5sMmg1UnBJS1dpRSt2K29rTFUwV3FPUmlhakE9PQ%3D%3D&name=670148&EIO=3&transport=websocket");
+
+    webSocket.onopen = function (event) {
+        webSocket.send("2");
+    };
+
+    webSocket.onmessage = function (event) {
+        //if (event.data.length > 2
+        //    && event.data.length != 85) {
+        //    var jsonObj = JSON.parse(event.data.substring(2, event.data.length));
+        //    console.log(jsonObj);
+        //}
+
+        if (event.data[0] == 0) {
+
+        } else {
+            console.log(event.data);
+        }
+
+        
+
+        if (event.data == "40") {
+            webSocket.send('42["subscribe",{"gids":[33]}]');
+            webSocket.send('42["enableUpdate",{"gids":[33]}]');
+            webSocket.send('42["subscribe",{"gids":[34]}]');
+            webSocket.send('42["enableUpdate",{"gids":[34]}]');
+        }
+    }
+
+    pingInterval(webSocket);
+
+</script>

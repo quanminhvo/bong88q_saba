@@ -1,0 +1,7 @@
+﻿42["p",["r3",[
+
+{"type":"o","oddsid":199259443,"oddsstatus":"closed","odds1a":0,"odds2a":0},
+{"type":"do","id":199259443,"oddsid":199259443},
+{"type":"m","matchid":30570529,"mc_special":1}
+
+],"4uUAD"]]

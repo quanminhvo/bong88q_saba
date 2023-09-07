@@ -1,0 +1,17 @@
+﻿{"authentication":{"username":"oneworks1_39051199","data":{"isAuthenticated":true,"username":"oneworks1_39051199","language":"vi-vn","ss":"U2FsdGVkX19V4/xzgAMrlaq67Vl4HyCf2CLSHBaEqg/zB0LK38Wul8BJ2SuobzfKIUFIOdgU082o/ERq8pMa8356kWoGDE7nwraAwb1sGUM=","isSSO":true,"time":"2020-05-27T03:34:59.818Z"}}}	298	
+10:35:03.017
+{"reCheckin":true,"user":{"updateCoint":true}}	46	
+10:36:02.444
+{"user":{"updateCoint":true}}	29	
+10:36:09.450
+{"user":{"updateCoint":true}}	29	
+10:36:11.067
+{"reCheckin":true,"user":{"updateCoint":true}}	46	
+10:37:02.061
+{"reCheckin":true,"user":{"updateCoint":true}}	46	
+10:38:02.059
+{"reCheckin":true,"user":{"updateCoint":true}}	46	
+10:39:02.060
+{"reCheckin":true,"user":{"updateCoint":true}}	46	
+10:40:02.059
+{"reCheckin":true,"user":{"updateCoint":true}}

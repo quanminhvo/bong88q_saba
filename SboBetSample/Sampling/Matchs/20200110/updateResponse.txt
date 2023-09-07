@@ -1,0 +1,147 @@
+﻿updateResponse[]:	length = 6
+
+
+updateResponse[0]:	ResponseId: tăng dần theo thời gian, QUERY STRING PARAM FOR THE NEXT REQUEST
+updateResponse[1]:	?
+updateResponse[2]:	mảng
+	updateResponse[2][0]:			danh sách các League
+		updateResponse[2][0][i][0]:		League_Id
+		updateResponse[2][0][i][1]:		League_Name
+		updateResponse[2][0][i][2]:		?
+		updateResponse[2][0][i][3]:		?
+	updateResponse[2][1]:			dang sách các Match
+		updateResponse[2][1][i][0]:		Match_Id
+		updateResponse[2][1][i][1]:		?
+		updateResponse[2][1][i][2]:		League_Id
+		updateResponse[2][1][i][3]:		Home
+		updateResponse[2][1][i][4]:		Away
+		updateResponse[2][1][i][5]:		?
+		updateResponse[2][1][i][6]:		?
+		updateResponse[2][1][i][7]:		Live Datetime
+		updateResponse[2][1][i][8]:		?
+		updateResponse[2][1][i][9]:		?
+	updateResponse[2][2]:			dang sách các Match Update Mapping
+		updateResponse[2][2][i][0]:		Match_Update_Mapping_Id
+		updateResponse[2][2][i][1]:		Match_Id
+		updateResponse[2][2][i][2]:		?
+		updateResponse[2][2][i][3]:		Live_Home_Score
+		updateResponse[2][2][i][4]:		Live_Away_Score
+		updateResponse[2][2][i][5]:		?
+	updateResponse[2][3]:			dang sách các Match Update Info
+		updateResponse[2][3][i][0]:		Match_Update_Mapping_Id
+		updateResponse[2][3][i][1]:		?
+		updateResponse[2][3][i][2]:		Live_Period
+		updateResponse[2][3][i][3]:		Current_Minute
+		updateResponse[2][3][i][4]:		?
+		updateResponse[2][3][i][5]:		? (may be home red)
+		updateResponse[2][3][i][6]:		? (may be away red)
+		updateResponse[2][3][i][7]:		Bù giờ
+		updateResponse[2][3][i][8]:		?
+		updateResponse[2][3][i][9]:		?
+	updateResponse[2][4]:			List of Match_Update_Mapping_Id, base on that Ids we delete coresponding matchs
+	updateResponse[2][5]:			List of Product 
+		updateResponse[2][5][i][0]:		Product_Id
+		updateResponse[2][5][i][1]:		Product_Info
+			updateResponse[2][5][i][2][0]:		Match_Update_Mapping_Id
+			updateResponse[2][5][i][2][1]:		Product_Type
+			updateResponse[2][5][i][2][2]:		?
+			updateResponse[2][5][i][2][3]:		??? (max bet)
+			updateResponse[2][5][i][2][4]:		Hdp1 / Hdp2 (dương thì Hdp1, âm thì Hdp2)
+		updateResponse[2][5][i][2]:		Price
+			updateResponse[2][5][i][2][0]:		Odds1a / Com1
+			updateResponse[2][5][i][2][1]:		Odds2a / Comx
+			updateResponse[2][5][i][2][2]:		...... / Com2
+	updateResponse[2][6]:			List of Product_Id to delete
+	updateResponse[2][7]:			? 
+	updateResponse[2][8]:			Sport Type 
+	updateResponse[2][9]:			?
+updateResponse[3]:	?
+	updateResponse[3][0]:	list of matchid that has streaming
+updateResponse[4]:	?
+updateResponse[5]:	?
+
+
+
+
+
+==========================================================================================================
+ref:
+	Product_Type:
+		1	fulltime handicap
+		2	fulltime odd/even
+		3	fulltime over/under
+		4
+		5	fulltime 1x2
+		6
+		7	first half handicap
+		8	first half 1x2
+		9	first half over/under
+	Live_Period:
+		0	LIVE
+		1	FIRST HALF
+		2	SECOND HALF
+		5	HALF TIME
+
+
+
+
+
+
+
+
+
+
+
+
+
+[4162158, 2892873, 0, 1, 0, 4] // HT
+[4125205, 2878742, 0, 1, 2, 9] // HT
+[4162158, 2892873, 0, 1, 0, 4] // HT
+[4125205, 2878742, 0, 1, 2, 9] // HT
+
+[4125205, 2878742, 0, 1, 2, 9] // HT sang LIVE
+
+[4125205, 2878742, 0, 1, 2, 9] // H1
+[4162158, 2892873, 0, 1, 0, 4] // H1
+[4125205, 2878742, 0, 1, 2, 9] // H1
+
+[4125205, 2878742, 0, 1, 2, 9] // H2
+[4125205, 2878742, 0, 1, 2, 9] // H2
+[4162159, 2892874, 0, 0, 1, 4] // H2
+[4162158, 2892873, 0, 1, 0, 4] // H2
+[4162158, 2892873, 0, 1, 0, 4] // H2
+[4165029, 2894231, 0, 1, 0, 4] // H2
+[4162159, 2892874, 0, 0, 1, 4] // H2
+[4162158, 2892873, 0, 1, 0, 4] // H2
+[4162158, 2892873, 0, 1, 0, 4] // H2
+[4125205, 2878742, 0, 1, 2, 9] // H2
+
+
+[4125205, 4, 5, 0, 45, 0, 0, 0, 0, {…}]		// HT
+[4162158, 2, 5, 0, 45, 0, 0, 0, 0, {…}]		// HT
+[4125205, 4, 5, 0, 45, 0, 0, 0, 0, {…}]		// HT
+
+[4125205, 4, 1, 45, 45, 0, 0, 3, 0, {…}]	// H1
+[4162158, 2, 1, 45, 45, 0, 0, 3, 0, {…}]	// H1
+[4125205, 4, 1, 45, 45, 0, 0, 3, 0, {…}]	// H1 3 phut bu gio
+[4165029, 2, 1, 45, 45, 0, 0, 1, 0, {…}]
+
+[4165594, 1, 1, 1, 45, 0, 0, 0, {…}, {…}]	// H1
+
+
+[4125205, 4, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4162159, 2, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4162158, 2, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4125205, 4, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4162158, 2, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4162159, 2, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4162158, 2, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4125205, 4, 2, 0, 45, 0, 0, 0, 0, {…}]		// H2
+[4174212, 1, 2, 46, 45, 0, 0, 4, {…}, {…}]	// H2 4 phut bu gio
+
+[4165029, 2, 0, 0, 45, 0, 0, 0, 0, {…}]		// HT sang LIVE
+[4162158, 2, 0, 0, 45, 0, 0, 0, 0, {…}]		// HT sang LIVE
+[4125205, 4, 0, 0, 45, 0, 0, 0, 0, {…}]		// HT sang LIVE
+	
+
+

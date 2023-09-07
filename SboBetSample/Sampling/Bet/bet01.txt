@@ -1,0 +1,106 @@
+﻿under
+http://i0697tq67284.asia.com3456.com/web-root/restricted/ticket/confirm.aspx?loginname=85601fa0868cbe4edf4e4d900863ce70&sameticket=0&betcount=1&stake=10&ostyle=1&stakeInAuto=10&betpage=12&acceptIfAny=0&autoProcess=0&autoRefresh=1&voucherId=0&oid=46419503&js=1&timeDiff=6988
+
+
+Request Method: GET
+
+
+loginname: 85601fa0868cbe4edf4e4d900863ce70
+sameticket: 0
+betcount: 1
+stake: 10
+ostyle: 1
+stakeInAuto: 10
+betpage: 12
+acceptIfAny: 0
+autoProcess: 0
+autoRefresh: 1
+voucherId: 0
+oid: 46419503
+js: 1
+timeDiff: 6988
+
+
+$M('page-head').onUpdateBetCreditFromTicket();
+$M('ticket').showOrderResult(101,1);
+$M('ticket').onUpdateBetReceipt('8376149958',[0, '-', '0##0', '0.72', 'Under', '', '10', 'Waiting', '7.20', '', 3.00, 3, 4191299, 'Your bet is being processed. Please check My Bets for latest bet status.' ]);
+
+$M('ticket').onOrderSubmitted();$M('mini-bet-list').openBetlistMini();
+
+
+
+under
+http://i0697tq67284.asia.com3456.com/web-root/restricted/ticket/confirm.aspx?loginname=fe07307a36f4ec5fd24c4f9e3a6a7b7e&sameticket=0&betcount=1&stake=10&ostyle=1&stakeInAuto=10&betpage=12&acceptIfAny=0&autoProcess=0&autoRefresh=1&voucherId=0&oid=46321180&js=1&timeDiff=3752
+
+loginname: fe07307a36f4ec5fd24c4f9e3a6a7b7e
+sameticket: 0
+betcount: 1
+stake: 10
+ostyle: 1
+stakeInAuto: 10
+betpage: 12
+acceptIfAny: 0
+autoProcess: 0
+autoRefresh: 1
+voucherId: 0
+oid: 46321180
+js: 1
+timeDiff: 3752
+
+
+
+
+over
+http://i0697tq67284.asia.com3456.com/web-root/restricted/ticket/confirm.aspx?loginname=fe07307a36f4ec5fd24c4f9e3a6a7b7e&sameticket=0&betcount=0&stake=10&ostyle=1&stakeInAuto=10&betpage=12&acceptIfAny=0&autoProcess=0&autoRefresh=1&voucherId=0&oid=46321180&js=1&timeDiff=4868
+
+loginname: fe07307a36f4ec5fd24c4f9e3a6a7b7e
+sameticket: 0
+betcount: 0
+stake: 10
+ostyle: 1
+stakeInAuto: 10
+betpage: 12
+acceptIfAny: 0
+autoProcess: 0
+autoRefresh: 1
+voucherId: 0
+oid: 46321180
+js: 1
+timeDiff: 4868
+
+
+
+over 
+http://i0697tq67284.asia.com3456.com/web-root/restricted/ticket/confirm.aspx?loginname=fe07307a36f4ec5fd24c4f9e3a6a7b7e&sameticket=0&betcount=2&stake=10&ostyle=1&stakeInAuto=10&betpage=12&acceptIfAny=0&autoProcess=0&autoRefresh=1&voucherId=0&oid=46321181&js=1&timeDiff=5001
+loginname: fe07307a36f4ec5fd24c4f9e3a6a7b7e
+sameticket: 0
+betcount: 2
+stake: 10
+ostyle: 1
+stakeInAuto: 10
+betpage: 12
+acceptIfAny: 0
+autoProcess: 0
+autoRefresh: 1
+voucherId: 0
+oid: 46321181
+js: 1
+timeDiff: 5001
+
+
+under
+http://i0697tq67284.asia.com3456.com/web-root/restricted/ticket/confirm.aspx?loginname=fe07307a36f4ec5fd24c4f9e3a6a7b7e&sameticket=0&betcount=3&stake=10&ostyle=1&stakeInAuto=10&betpage=12&acceptIfAny=0&autoProcess=0&autoRefresh=1&voucherId=0&oid=46321181&js=1&timeDiff=2375
+loginname: fe07307a36f4ec5fd24c4f9e3a6a7b7e
+sameticket: 0
+betcount: 3
+stake: 10
+ostyle: 1
+stakeInAuto: 10
+betpage: 12
+acceptIfAny: 0
+autoProcess: 0
+autoRefresh: 1
+voucherId: 0
+oid: 46321181
+js: 1
+timeDiff: 2375

@@ -1,0 +1,117 @@
+﻿<script src="js/jquery-3.4.1.min.js"></script>
+
+
+<script>
+
+
+
+
+
+</script>
+
+<script>
+
+    pingInterval = function (webSocket) {
+        setTimeout(function () {
+            webSocket.send("2");
+            pingInterval(webSocket);
+        }, 6000);
+    }
+
+    httpGet = function (theUrl) {
+        var xmlHttp = new XMLHttpRequest();
+        xmlHttp.open("GET", theUrl, false); // false for synchronous request
+        xmlHttp.send(null);
+        return xmlHttp.responseText;
+    }
+
+    keepConnection_A = function () {
+        setTimeout(function () {
+
+            $.post("https://pmwl.5566688.com/SingleLobbyWebPortal/Common/SetTimeOut", { SBCustID: '33181355' }, function (data) {
+                if (data.strSetTimeOut !== "") {
+                    var ErrCode = data.ErrorCode;
+                    var ErrMessage = data.ErrorMessage;
+
+                    if (ErrCode !== "" || ErrCode !== '') {
+                        Error_Analytics(ErrCode);
+                        location.href = "Account/MiniReLoad?ErrCode=" + ErrCode + "&ErrMessage=" + ErrMessage;
+                    }
+                } else {
+                    location.href = "Account/MiniClosed";
+                }
+            });
+
+            SetTimeOut();
+        }, 600000);
+    }
+
+    keepConnection_B = function () {
+
+
+        setTimeout(function () {
+            var http = new XMLHttpRequest();
+            var url = 'https://pmwl.5566688.com/SingleLobbyWebPortal/Common/SetTimeOut';
+            var params = 'SBCustID=33181355';
+            http.open('POST', url, true);
+
+            http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+
+            http.onreadystatechange = function () {
+                if (http.readyState == 4 && http.status == 200) {
+                    console.log(http.responseText);
+                }
+            }
+            http.send(params);
+
+            keepConnection();
+        }, 600000);
+
+
+    }
+
+    processWebsocketData = function (sebsocketData) {
+        sebsocketData = sebsocketData.length > 6 ? sebsocketData.substring(2, sebsocketData.length) : null;
+        if (sebsocketData === null) return;
+
+        console.log(JSON.parse(sebsocketData));
+    }
+
+
+</script>
+
+<script>
+
+    if (typeof jQuery != 'undefined') {
+        alert(jQuery.fn.jquery);
+    }
+
+    var webSocket = new WebSocket("ws://agnj3.nhacai88.net/socket.io/?gid=bdb0d6a439ae8ece&token=0da0aa7f-2f4f-437d-805b-2b72d755a603&id=51637245&rid=0&EIO=3&transport=websocket");
+
+    webSocket.onopen = function (event) {
+        //webSocket.send("2probe");
+    };
+
+    webSocket.onmessage = function (event) {
+        console.log(event.data);
+        //processWebsocketData(event.data);
+        //if (event.data == "3probe") {
+        //    webSocket.send("5");
+        //    //webSocket.send('42["subscribe","menu",[{"id":"c0","rev":"","condition":{}}]]');
+        //    //webSocket.send('42["subscribe","odds",{"id":"c1","rev":0,"condition":{"mini":1,"bettype":[1,20,501]}}]');
+            
+        //}
+        //else
+        if (event.data == "40") {
+            //
+            webSocket.send('42["init",{"gid":"bdb0d6a439ae8ece","token":"0da0aa7f-2f4f-437d-805b-2b72d755a603","id":"51637245","rid":"0","v":2}]');
+            webSocket.send('42["subscribe",[["odds",[{"id":"c2","rev":"","sorting":"n","condition":{"sporttype":1,"marketid":"L","bettype":[1,3,5,7,8,15,301,302,303,304]}},{"id":"c3","rev":"","sorting":"n","condition":{"sporttype":1,"marketid":"T","bettype":[1,3,5,7,8,15,301,302,303,304]}}]]]]');
+            //webSocket.send('42["init",{"gid":"0bc91079cb813cda","token":"a464638b-9a7b-4731-b356-8215375692e5","id":"47023753","rid":"1","v":1}]');
+            //webSocket.send('42["subscribe","odds",[{"id":"c2","rev":0,"condition":{"sporttype":1,"marketid":"L","bettype":[1,3,5,7,8,15,301,302,303,304],"sorting":"n"}}]]');
+        }
+    }
+
+    pingInterval(webSocket);
+    //keepConnection();
+    //SetTimeOut();
+</script>

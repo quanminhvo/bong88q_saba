@@ -1,0 +1,42 @@
+﻿{
+    "ErrorCode":0,
+    "ErrorMsg":null,
+    "Redirect":null,
+    "Data":{
+        "ItemList":[
+            {
+                "Key":"202414744_h",
+                "DisplayOdds":"",
+                "DisplayHDP":"2.25",
+                "BetID":"",
+                "TransId_Cash":"0",
+                "TransId_Bonus":"0",
+                "Code":8,
+                "Message":"Rất tiếc, giá trị đặt cược của bạn lớn hơn Quỹ Tiền Hiện Có",
+                "Stake":"10",
+                "Stake_Cash":"0.00",
+                "Stake_Bonus":"0.00",
+                "ActualStake_Cash":"0.00",
+                "ActualStake_Bonus":"0.00",
+                "LiveHomeScore":0,
+                "LiveAwayScore":0,
+                "TicketStatus":1,
+                "IsInPlay":false,
+                "TotalPerBet":0,
+                "FinalBalance":"0",
+                "CheckWaitingTicket":false,
+                "ErrorCode":8,
+                "TicketJson":null
+            }
+        ]
+    }
+}
+
+"{
+	"ErrorCode":105,
+	"ErrorMsg":"Chúng tôi đang cập nhật tỷ lệ cược, vui lòng thử lại sau.",
+	"Redirect":null,
+	"Data":null
+}"
+
+switch(n.ErrorCode){case 500:case 100:case 102:case 103:case 106:n.ErrorMsg&&alert(n.ErrorMsg);navigator.userAgent.toLocaleLowerCase().match(/android/i)?document.location=t:window.location.href=t;break;case 107:s.CloseAll();alert(n.ErrorMsg);navigator.userAgent.toLocaleLowerCase().match(/android/i)?document.location=window.location.origin+"/Home/LoginPage":window.location.href=window.location.origin+"/Home/LoginPage";break;case 101:navigator.userAgent.toLocaleLowerCase().match(/android/i)?document.location=t:window.location.href=t;break;case 104:case 105:return!0;case 210:return r=i(40),r.changeRID(n.Data.no,n.Data.tk),!0;case 911:window.MBCAlert.open({text:n.ErrorMsg,btnNumber:1});break;default:return!0}

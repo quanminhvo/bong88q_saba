@@ -1,0 +1,41 @@
+﻿.suspended.betInfo, .suspended.betInfo-live, .suspended.betInfo-closed {
+  background: #feec6e;
+}
+
+
+.ticketStatus.running, .running .ticketStatus {
+  background: #5574a7;
+}
+
+.quickBetPanel .betInfo .selectorOdds, .betSlip .selectorOdds, .betItem .text-large, .betItem-closed .text-large {
+  display: inline-block;
+  font-size: 1.6em;
+  line-height: 0;
+}
+
+.betInfo, .betInfo-live, .betInfo-closed {
+  padding: 0.5em 0.833em;
+  position: relative;
+  white-space: normal;
+}
+
+.betInfo-closed .betDetial {
+  border-color: rgba(0, 0, 0, 0.3);
+  color: rgba(0, 0, 0, 0.3);
+}
+
+
+var y = "closed" === (n = this.props.tickets[f]).oddsStatus ? "-closed " : n.IsLive ? "-live " : " "
+    , p = this.removeTicket.bind(this, f)
+    , e = n.OddsInfo
+    , t = "";
+
+a.push(r.createElement("div", {
+    key: n.oddsid,
+    className: "betInfo" + y + n.oddsStatus
+                    
+
+y = (n = this.props.tickets[0]).IsLive ? "-live " : " ",
+a.push(r.createElement("div", {
+    className: "betInfo" + y + n.oddsStatus
+}

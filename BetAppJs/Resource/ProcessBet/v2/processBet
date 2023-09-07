@@ -1,0 +1,57 @@
+﻿ItemList[0][Type]: OU
+ItemList[0][Bettype]: 3
+ItemList[0][Oddsid]: 301394984
+ItemList[0][Odds]: -0.93
+ItemList[0][Line]: 2.5
+ItemList[0][Hdp1]: 2.5
+ItemList[0][Hdp2]: 0
+ItemList[0][Hscore]: 1
+ItemList[0][Ascore]: 0
+ItemList[0][Betteam]: h
+ItemList[0][Stake]: 3
+ItemList[0][Matchid]: 40325869
+ItemList[0][ChoiceValue]: Tài
+ItemList[0][ErrorCode]: 0
+ItemList[0][Home]: Antofagasta
+ItemList[0][Away]: Huachipato
+ItemList[0][Gameid]: 1
+ItemList[0][ProgramID]: 
+ItemList[0][RaceNum]: 0
+ItemList[0][Runner]: 0
+ItemList[0][PoolType]: 0
+ItemList[0][MRPercentage]: 
+ItemList[0][AcceptBetterOdds]: true
+ItemList[0][isQuickBet]: true
+ItemList[0][isTablet]: false
+ItemList[0][PhoneBettingSetting][IsGraphButton]: false
+ItemList[0][PhoneBettingSetting][GraphRemark]: 
+ItemList[0][PhoneBettingSetting][AdminID]: 0
+ItemList[0][PhoneBettingSetting][HideTicket]: false
+ItemList[0][PhoneBettingSetting][Using1X2AsiaHdp]: false
+ItemList[0][PhoneBettingSetting][Using1X2Hdp]: false
+ItemList[0][IsInPlay]: false
+ItemList[0][BonusID]: 0
+ItemList[0][BonusType]: 0
+ItemList[0][PromoID]: 0
+ItemList[0][sinfo]: m2454X1FA4
+ItemList[0][MMR]: 
+ItemList[0][parentMatchId]: 0
+
+
+LPVID=NjYTM1MGI0YWIwYTdiNmVj; RNRVersion-9da29602c2931d0f71a3fcff7f89552d=1; LangKey=vn; LoginName=QZC8B303999; ASP.NET_SessionId=u1z2oayefnc1ppesylpfkxwe; _culture=vi-VN; _v1promo=1; LPSID-44279307=PGbGW29GSriCABNV4xJKew; .ASPXAUTH=C6729F14C071FA2DEDEF6B66B9E3A275D047F9B4B1636F7EA9CE0AEF65A317D90D9ECF6473F2CB7CAD95DC992A325A8D9D53E1921DBC32ECEA45F4313442228577A421990A4A74558D05D0C5C9DF4FF0C2C3EB51FB6D9083CC856D6AA5346E3F
+LPVID=NjYTM1MGI0YWIwYTdiNmVj; RNRVersion-9da29602c2931d0f71a3fcff7f89552d=1; LangKey=vn; LoginName=QZC8B303999; ASP.NET_SessionId=u1z2oayefnc1ppesylpfkxwe; _culture=vi-VN; _v1promo=1; LPSID-44279307=PGbGW29GSriCABNV4xJKew; .ASPXAUTH=C6729F14C071FA2DEDEF6B66B9E3A275D047F9B4B1636F7EA9CE0AEF65A317D90D9ECF6473F2CB7CAD95DC992A325A8D9D53E1921DBC32ECEA45F4313442228577A421990A4A74558D05D0C5C9DF4FF0C2C3EB51FB6D9083CC856D6AA5346E3F
+
+
+Accept: application/json, text/javascript, */*; q=0.01
+Accept-Encoding: gzip, deflate
+Accept-Language: en-US,en;q=0.9
+Connection: keep-alive
+Content-Length: 1439
+Content-Type: application/x-www-form-urlencoded; charset=UTF-8
+Cookie: LPVID=NjYTM1MGI0YWIwYTdiNmVj; RNRVersion-9da29602c2931d0f71a3fcff7f89552d=1; LangKey=vn; LoginName=QZC8B303999; ASP.NET_SessionId=u1z2oayefnc1ppesylpfkxwe; _culture=vi-VN; _v1promo=1; LPSID-44279307=PGbGW29GSriCABNV4xJKew; .ASPXAUTH=C6729F14C071FA2DEDEF6B66B9E3A275D047F9B4B1636F7EA9CE0AEF65A317D90D9ECF6473F2CB7CAD95DC992A325A8D9D53E1921DBC32ECEA45F4313442228577A421990A4A74558D05D0C5C9DF4FF0C2C3EB51FB6D9083CC856D6AA5346E3F
+Host: 3jxao.nhacai88.net
+Origin: http://3jxao.nhacai88.net
+Referer: http://3jxao.nhacai88.net/Sports/
+User-Agent: Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/87.0.4280.88 Safari/537.36
+username: QZC8B303999
+X-Requested-With: XMLHttpRequest

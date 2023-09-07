@@ -1,0 +1,1 @@
+﻿42["p",["r3",[{"type":"o","oddsid":199259441,"odds1a":-0.24,"odds2a":0.06},{"type":"m","matchid":30570529,"injurytime":3},{"type":"o","oddsid":199336895,"odds1a":-0.27,"odds2a":0.11}],"4uNK6"]]

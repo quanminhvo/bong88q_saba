@@ -1,0 +1,44 @@
+﻿ItemList[0][sportname]: Bóng đá
+ItemList[0][gamename]: 
+ItemList[0][bettypename]: Hiệp 1 -  Tài/Xỉu
+ItemList[0][ChoiceValue]: Xỉu
+ItemList[0][Line]: 1.25
+ItemList[0][displayHDP]: 1.25
+ItemList[0][odds]: 0.76
+ItemList[0][home]: Clyde (N)
+ItemList[0][away]: Hamilton Academical
+ItemList[0][league]: SCOTLAND LEAGUE CUP
+ItemList[0][IsLive]: false
+ItemList[0][ProgramID]: 
+ItemList[0][RaceNum]: 0
+ItemList[0][Runner]: 0
+ItemList[0][PoolType]: 1
+ItemList[0][imgurl]: 
+ItemList[0][BetID]: 
+ItemList[0][type]: OU
+ItemList[0][bettype]: 8
+ItemList[0][oddsid]: 205745041
+ItemList[0][Hscore]: 0
+ItemList[0][Ascore]: 0
+ItemList[0][Matchid]: 31316037
+ItemList[0][betteam]: a
+ItemList[0][stake]: 3
+ItemList[0][gameid]: 1
+ItemList[0][MRPercentage]: 
+ItemList[0][OddsInfo]: 
+ItemList[0][LiveInfo]: 
+ItemList[0][AcceptBetterOdds]: true
+ItemList[0][AutoAcceptSec]: 
+ItemList[0][ParentTypeId]: 8
+ItemList[0][showLiveScore]: false
+ItemList[0][colorHomeTeam]: 
+ItemList[0][colorAwayTeam]: 
+ItemList[0][hasParlay]: false
+ItemList[0][matchcode]: 
+ItemList[0][isQuickBet]: true
+ItemList[0][UseBonus]: 0
+ItemList[0][kickofftime]: 1563389040
+ItemList[0][ShowTime]: <font color=red>LIVE</font> 02:45AM
+ItemList[0][oddsStatus]: statusChanged
+ItemList[0][min]: 3
+ItemList[0][max]: 535

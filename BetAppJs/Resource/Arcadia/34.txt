@@ -1,0 +1,61 @@
+﻿0{"sid":"vCIV2MJgpgRmIXMWPBRe","upgrades":[],"pingInterval":10000,"pingTimeout":5000}
+42["rebuildInfo",
+{
+	"rid":"2904090",
+	"state":"BET",
+	"currentTime":1588815493136,
+	"nextStateTime":1588815499842,
+	"pool":{"odd":447,"even":477},
+	"number":{"odd":24,"even":21},
+	"total":{"odd":0,"even":0},
+	"bet":[],
+	"history":[
+		{"rid":"2903886","dieNumber":13},
+		{"rid":"2903909","dieNumber":8},
+		{"rid":"2903928","dieNumber":11},
+		{"rid":"2903946","dieNumber":11},
+		{"rid":"2903965","dieNumber":6},
+		{"rid":"2903989","dieNumber":5},
+		{"rid":"2904009","dieNumber":4},
+		{"rid":"2904027","dieNumber":13},
+		{"rid":"2904046","dieNumber":15},
+		{"rid":"2904066","dieNumber":12}
+	],
+	"betTime":20000,
+	"lockTime":2000,
+	"animateTime":2500,
+	"showdownTime":2500,
+	"prebetTime":4000,
+	"chips":[1,5,25,100,250],
+	"odds":1.98,
+	"gid":34}
+]
+
+42["stateChange",{"rid":"2904090","state":"ANIMATE","currentTime":1588815501849,"nextStateTime":1588815504349,"pool":{"odd":896,"even":1027},"number":{"odd":44,"even":44},"gid":34}]
+42["stateChange",{"rid":"2904090","state":"SHOWDOWN","currentTime":1588815504354,"nextStateTime":1588815506854,"pool":{"odd":896,"even":1027},"number":{"odd":44,"even":44},"gid":34}]
+42["stateChange",{"rid":"2904108","state":"BET","currentTime":1588815506854,"nextStateTime":1588815526854,"pool":{"odd":0,"even":0},"number":{"odd":0,"even":0},"gid":34}]
+42["stateChange",{"rid":"2904108","state":"BET","currentTime":1588815506854,"nextStateTime":1588815526854,"pool":{"odd":0,"even":0},"number":{"odd":0,"even":0},"gid":34}]
+42["stateChange",{"rid":"2904108","state":"LOCK","currentTime":1588815526877,"nextStateTime":1588815528877,"pool":{"odd":840,"even":827},"number":{"odd":55,"even":38},"gid":34}]
+42["result",{"rid":"2904108","dieNumber":2,"gid":34}]
+42["stateChange",{"rid":"2904108","state":"ANIMATE","currentTime":1588815528906,"nextStateTime":1588815531406,"pool":{"odd":840,"even":827},"number":{"odd":55,"even":38},"gid":34}]
+42["stateChange",{"rid":"2904108","state":"SHOWDOWN","currentTime":1588815531414,"nextStateTime":1588815533914,"pool":{"odd":840,"even":827},"number":{"odd":55,"even":38},"gid":34}]
+42["stateChange",{"rid":"2904126","state":"BET","currentTime":1588815534241,"nextStateTime":1588815554241,"pool":{"odd":0,"even":0},"number":{"odd":0,"even":0},"gid":34}]
+42["stateChange",{"rid":"2904126","state":"LOCK","currentTime":1588815554336,"nextStateTime":1588815556336,"pool":{"odd":912,"even":827},"number":{"odd":54,"even":41},"gid":34}]
+42["result",{"rid":"2904126","dieNumber":15,"gid":34}]
+42["stateChange",{"rid":"2904126","state":"ANIMATE","currentTime":1588815556336,"nextStateTime":1588815558836,"pool":{"odd":912,"even":827},"number":{"odd":54,"even":41},"gid":34}]
+42["stateChange",{"rid":"2904126","state":"SHOWDOWN","currentTime":1588815558836,"nextStateTime":1588815561336,"pool":{"odd":912,"even":827},"number":{"odd":54,"even":41},"gid":34}]
+42["stateChange",
+{
+	"rid":"2904145",
+	"state":"BET",
+	"currentTime":1588815561336,
+	"nextStateTime":1588815581336,
+	"pool":{"odd":0,"even":0},
+	"number":{"odd":0,"even":0},
+	"gid":34
+}
+]
+
+
+
+

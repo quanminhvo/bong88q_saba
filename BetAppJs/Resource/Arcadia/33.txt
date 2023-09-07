@@ -1,0 +1,59 @@
+﻿0{"sid":"vCIV2MJgpgRmIXMWPBRe","upgrades":[],"pingInterval":10000,"pingTimeout":5000}
+42["rebuildInfo",{
+    "rid":"2904076",
+    "state":"ANIMATE",
+    "currentTime":1588815493131,
+    "nextStateTime":1588815493946,
+    "pool":{"big":504,"small":885},
+    "number":{"big":36,"small":51},
+    "total":{"big":0,"small":0},
+    "bet":[],
+    "history":[
+        {"rid":"2903933","dieNumber":4},
+        {"rid":"2903951","dieNumber":5},
+        {"rid":"2903968","dieNumber":3},
+        {"rid":"2903979","dieNumber":4},
+        {"rid":"2903996","dieNumber":4},
+        {"rid":"2904013","dieNumber":6},
+        {"rid":"2904032","dieNumber":6},
+        {"rid":"2904049","dieNumber":5},
+        {"rid":"2904061","dieNumber":5},
+        {"rid":"2904076","dieNumber":5}
+    ],
+    "betTime":15000,
+    "lockTime":2000,
+    "animateTime":2500,
+    "showdownTime":2500,
+    "chips":[1,5,25,100,250],
+    "odds":1.98,
+    "gid":33
+    }
+]
+42["stateChange",{"rid":"2904076","state":"SHOWDOWN","currentTime":1588815493947,"nextStateTime":1588815496447,"pool":{"big":504,"small":885},"number":{"big":36,"small":51},"gid":33}]
+42["stateChange",{"rid":"2904094","state":"BET","currentTime":1588815496450,"nextStateTime":1588815511450,"pool":{"big":0,"small":0},"number":{"big":0,"small":0},"gid":33}]
+42["stateChange",{"rid":"2904094","state":"LOCK","currentTime":1588815511601,"nextStateTime":1588815513601,"pool":{"big":1012,"small":917},"number":{"big":60,"small":49},"gid":33}]
+42["result",{"rid":"2904094","dieNumber":2,"gid":33}]
+42["stateChange",{"rid":"2904094","state":"ANIMATE","currentTime":1588815513615,"nextStateTime":1588815516115,"pool":{"big":1012,"small":917},"number":{"big":60,"small":49},"gid":33}]
+42["stateChange",{"rid":"2904094","state":"SHOWDOWN","currentTime":1588815516118,"nextStateTime":1588815518618,"pool":{"big":1012,"small":917},"number":{"big":60,"small":49},"gid":33}]
+42["stateChange",{"rid":"2904113","state":"BET","currentTime":1588815518620,"nextStateTime":1588815533620,"pool":{"big":0,"small":0},"number":{"big":0,"small":0},"gid":33}]
+42["stateChange",{"rid":"2904113","state":"LOCK","currentTime":1588815533625,"nextStateTime":1588815535625,"pool":{"big":617,"small":757},"number":{"big":40,"small":33},"gid":33}]
+42["result",{"rid":"2904113","dieNumber":6,"gid":33}]
+42["stateChange",{"rid":"2904113","state":"ANIMATE","currentTime":1588815535626,"nextStateTime":1588815538126,"pool":{"big":617,"small":757},"number":{"big":40,"small":33},"gid":33}]
+42["stateChange",{"rid":"2904113","state":"SHOWDOWN","currentTime":1588815538151,"nextStateTime":1588815540651,"pool":{"big":617,"small":757},"number":{"big":40,"small":33},"gid":33}]
+42["stateChange",{"rid":"2904130","state":"BET","currentTime":1588815540654,"nextStateTime":1588815555654,"pool":{"big":0,"small":0},"number":{"big":0,"small":0},"gid":33}]
+42["stateChange",{"rid":"2904130","state":"LOCK","currentTime":1588815555660,"nextStateTime":1588815557660,"pool":{"big":565,"small":829},"number":{"big":35,"small":47},"gid":33}]
+42["result",{"rid":"2904130","dieNumber":2,"gid":33}]
+42["stateChange",{"rid":"2904130","state":"ANIMATE","currentTime":1588815557661,"nextStateTime":1588815560161,"pool":{"big":565,"small":829},"number":{"big":35,"small":47},"gid":33}]
+42["stateChange",{"rid":"2904130","state":"SHOWDOWN","currentTime":1588815560161,"nextStateTime":1588815562661,"pool":{"big":565,"small":829},"number":{"big":35,"small":47},"gid":33}]
+42["stateChange",{"rid":"2904148","state":"BET","currentTime":1588815562663,"nextStateTime":1588815577663,"pool":{"big":0,"small":0},"number":{"big":0,"small":0},"gid":33}
+42["stateChange",{"rid":"2904148","state":"LOCK","currentTime":1588815577668,"nextStateTime":1588815579668,"pool":{"big":718,"small":790},"number":{"big":44,"small":32},"gid":33}]
+42["result",{"rid":"2904148","dieNumber":4,"gid":33}]
+42["stateChange",{"rid":"2904148","state":"ANIMATE","currentTime":1588815579669,"nextStateTime":1588815582169,"pool":{"big":718,"small":790},"number":{"big":44,"small":32},"gid":33}]
+42["stateChange",{"rid":"2904148","state":"SHOWDOWN","currentTime":1588815582169,"nextStateTime":1588815584669,"pool":{"big":718,"small":790},"number":{"big":44,"small":32},"gid":33}]
+
+
+42["gameInfo",{"rid":"2904158","currentTime":1588815588952,"pool":{"big":45,"small":12},"number":{"big":3,"small":1},"gid":33}]
+42["gameInfo",{"rid":"2904158","currentTime":1588815588980,"pool":{"big":45,"small":114},"number":{"big":3,"small":4},"gid":33}]
+
+
+

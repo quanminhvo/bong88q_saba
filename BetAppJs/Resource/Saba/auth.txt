@@ -1,0 +1,10 @@
+﻿localStorage["www.sabagame.com.scss"]
+"{"isAuthenticated":true,"username":"oneworks1_39051199","language":"vi-vn","ss":"U2FsdGVkX18AOkpU759tPsMrzw/r76qwUMXi4iUfVETblEI8w4EhxQTtAMifqJwP3Rs3m5Mbiqom3sCUSKfPhoduqauEHWXB/3b8bFivTbI=","isSSO":true,"time":"2020-05-27T06:17:53.855Z"}"
+
+
+{
+  "unauth": {
+    "message": "Authentication failure",
+    "isSessionExpired": true
+  }
+}

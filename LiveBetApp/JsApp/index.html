@@ -1,0 +1,64 @@
+﻿<script src="jquery-3.4.1.min.js"></script>
+
+<script>
+    setTimeOut = function () {
+        var http = new XMLHttpRequest();
+        var url = 'https://pmwl.5566688.com/SingleLobbyWebPortal/Common/SetTimeOut';
+        var params = 'SBCustID=36562670';
+        http.open('POST', url, true);
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        http.onreadystatechange = function () {
+            console.log(http);
+            if (http.readyState == 4 && http.status == 200) {
+                console.log(http.responseText);
+            }
+        }
+        http.send(params);
+    }
+
+    readTextFile = function (file, callback) {
+        var rawFile = new XMLHttpRequest();
+        rawFile.overrideMimeType("application/json");
+        rawFile.open("GET", file, true);
+        rawFile.onreadystatechange = function () {
+            if (rawFile.readyState === 4) {
+                if (rawFile.status === 200 || rawFile.status == 0) {
+                    callback(rawFile.responseText);
+                }
+            }
+        }
+        rawFile.send(null);
+    }
+
+    processBet = function () {
+
+        var cookie = "MSPlatform=2; OddsType_TV71B9AC010=4; OddsType_QZ3707A3013=4; _v1promo=1; OddsType_QZ378810378=4; QBHint_QZ378810378=1; _culture=vi-VN; ASP.NET_SessionId=n13c5bm3s5t1edk0megwzthw; UqZBpDL73iXNAQVKlCjtiSnFFMMq44NJIIg_=v1Wdgqgw__d-H; LoginName=Dungthu10; NameKey=Dungthu10; .ASPXAUTH=D9F026405F5E809005940DEE7C196449244D513F24A68EF3BD2F48A47AC8ED7E3150AE6746EEF592F4E6DAC7A3A127B978D87A95A0DCD045565FAA62C5AA823798FD2193085F5F38E408EB756CC2C2FF7D30CC33D755E7CDE1A852EDF475B453; _UserName=TV71B9AC010; LoginType=n";
+        var http = new XMLHttpRequest();
+        var url = 'https://1q7ls.5566688.com/Betting/ProcessBet';
+        var params = 'ItemList[0][sportname]=Bóng đá&ItemList[0][gamename]=&ItemList[0][bettypename]=Tài/Xỉu&ItemList[0][ChoiceValue]=Tài&ItemList[0][Line]=3.50&ItemList[0][displayHDP]= 3.50&ItemList[0][odds]=0.77&ItemList[0][home]=Valentine FC (N)&ItemList[0][away]=Edgeworth Eagles FC&ItemList[0][league]=AUSTRALIA FFA CUP QUALIFIERS&ItemList[0][IsLive]=false&ItemList[0][ProgramID]=&ItemList[0][RaceNum]=0&ItemList[0][Runner]=0&ItemList[0][PoolType]=1&ItemList[0][imgurl]=&ItemList[0][BetID]&ItemList[0][type]=OU&ItemList[0][bettype]=3&ItemList[0][oddsid]=201246459&ItemList[0][Hscore]=0&ItemList[0][Ascore]=0&ItemList[0][Matchid]=30813353&ItemList[0][betteam]=h&ItemList[0][stake]=10&ItemList[0][gameid]=1&ItemList[0][MRPercentage]=&ItemList[0][OddsInfo]=&ItemList[0][LiveInfo]=&ItemList[0][AcceptBetterOdds]=true&ItemList[0][AutoAcceptSec]=&ItemList[0][ParentTypeId]=3&ItemList[0][showLiveScore]=false&ItemList[0][colorHomeTeam]=&ItemList[0][colorAwayTeam]=&ItemList[0][hasParlay]=false&ItemList[0][matchcode]=&ItemList[0][isQuickBet]=true&ItemList[0][UseBonus]=0&ItemList[0][kickofftime]=1560331740&ItemList[0][ShowTime]=&ItemList[0][oddsStatus]=&ItemList[0][min]=3&ItemList[0][max]=1,070';
+
+        http.open('POST', url, true);
+        http.setRequestHeader('Content-type', 'application/x-www-form-urlencoded');
+        http.setRequestHeader('username', 'TV71B9AC010');
+        http.setRequestHeader('Cookie', cookie);
+        http.withCredentials = true;
+        http.send(params);
+
+    }
+</script>
+
+<script>
+
+
+    if (typeof jQuery != 'undefined') {
+        alert(jQuery.fn.jquery);
+    }
+    processBet();
+    readTextFile("betData.json", function (text) {
+        var data = JSON.parse(text);
+        console.log(data);
+    });
+
+
+
+</script>
