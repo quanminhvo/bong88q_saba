@@ -4288,5 +4288,11 @@ namespace LiveBetApp.Forms
                 DataStore.BetByHdpPrice.RemoveAll(item => item.MatchId == _matchId && item.AutoBetMessage.Contains("OverEnd"));
             }
         }
+
+        private void handicapHistoryToolStripMenuItem_Click(object sender, EventArgs e)
+        {
+            HandicapHistory form = new HandicapHistory(_matchId);
+            form.ShowDialog();
+        }
     }
 }

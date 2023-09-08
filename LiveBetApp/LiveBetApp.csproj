@@ -381,6 +381,12 @@
     <Compile Include="Forms\GlobalShowtimeHistoryForm.Designer.cs">
       <DependentUpon>GlobalShowtimeHistoryForm.cs</DependentUpon>
     </Compile>
+    <Compile Include="Forms\HandicapHistory.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Forms\HandicapHistory.Designer.cs">
+      <DependentUpon>HandicapHistory.cs</DependentUpon>
+    </Compile>
     <Compile Include="Forms\HandicapPricesForm.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -837,6 +843,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\GlobalShowtimeHistoryForm.resx">
       <DependentUpon>GlobalShowtimeHistoryForm.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Forms\HandicapHistory.resx">
+      <DependentUpon>HandicapHistory.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Forms\HandicapPricesForm.resx">
       <DependentUpon>HandicapPricesForm.cs</DependentUpon>

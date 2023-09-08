@@ -31,6 +31,13 @@ namespace LiveBetApp.Models.DataModels
         }
 
         public TimeSpan TimeSpanFromStart { get; set; }
+        public string TimeSpanFromStartStr
+        {
+            get
+            {
+                return TimeSpanFromStart.TotalMinutes.ToString("N0");
+            }
+        }
     }
 
 }

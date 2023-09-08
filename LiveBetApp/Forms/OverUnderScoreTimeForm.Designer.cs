@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -43,11 +44,11 @@
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle14 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle15 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle16 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.tableLayoutPanel1 = new System.Windows.Forms.TableLayoutPanel();
             this.tableLayoutPanel3 = new System.Windows.Forms.TableLayoutPanel();
             this.splitContainer3 = new System.Windows.Forms.SplitContainer();
             this.splitContainer7 = new System.Windows.Forms.SplitContainer();
+            this.dgvInsertFtH1 = new System.Windows.Forms.DataGridView();
             this.dgvOuScoreRemainingTime = new System.Windows.Forms.DataGridView();
             this.splitContainer4 = new System.Windows.Forms.SplitContainer();
             this.dgvIuoo = new System.Windows.Forms.DataGridView();
@@ -118,7 +119,7 @@
             this.fhToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.ftToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.cancel050ToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
-            this.dgvInsertFtH1 = new System.Windows.Forms.DataGridView();
+            this.handicapHistoryToolStripMenuItem = new System.Windows.Forms.ToolStripMenuItem();
             this.tableLayoutPanel1.SuspendLayout();
             this.tableLayoutPanel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer3)).BeginInit();
@@ -129,6 +130,7 @@
             this.splitContainer7.Panel1.SuspendLayout();
             this.splitContainer7.Panel2.SuspendLayout();
             this.splitContainer7.SuspendLayout();
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInsertFtH1)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOuScoreRemainingTime)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer4)).BeginInit();
             this.splitContainer4.Panel1.SuspendLayout();
@@ -165,7 +167,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvFirstHalf)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvUnderPrice)).BeginInit();
             this.menuStrip1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInsertFtH1)).BeginInit();
             this.SuspendLayout();
             // 
             // tableLayoutPanel1
@@ -235,6 +236,31 @@
             this.splitContainer7.Size = new System.Drawing.Size(233, 305);
             this.splitContainer7.SplitterDistance = 153;
             this.splitContainer7.TabIndex = 0;
+            // 
+            // dgvInsertFtH1
+            // 
+            this.dgvInsertFtH1.AllowUserToAddRows = false;
+            this.dgvInsertFtH1.AllowUserToDeleteRows = false;
+            this.dgvInsertFtH1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
+            this.dgvInsertFtH1.DefaultCellStyle = dataGridViewCellStyle1;
+            this.dgvInsertFtH1.Dock = System.Windows.Forms.DockStyle.Fill;
+            this.dgvInsertFtH1.Location = new System.Drawing.Point(0, 0);
+            this.dgvInsertFtH1.Margin = new System.Windows.Forms.Padding(4);
+            this.dgvInsertFtH1.Name = "dgvInsertFtH1";
+            this.dgvInsertFtH1.ReadOnly = true;
+            this.dgvInsertFtH1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
+            this.dgvInsertFtH1.RowHeadersVisible = false;
+            this.dgvInsertFtH1.RowHeadersWidth = 10;
+            this.dgvInsertFtH1.RowTemplate.Height = 15;
+            this.dgvInsertFtH1.Size = new System.Drawing.Size(233, 153);
+            this.dgvInsertFtH1.TabIndex = 10;
             // 
             // dgvOuScoreRemainingTime
             // 
@@ -910,7 +936,8 @@
             this.sheetTableV2ToolStripMenuItem,
             this.halftimeOverUnderPricesToolStripMenuItem,
             this.priceStepAlertToolStripMenuItem,
-            this.priceChangeFreqToolStripMenuItem1});
+            this.priceChangeFreqToolStripMenuItem1,
+            this.handicapHistoryToolStripMenuItem});
             this.viewToolStripMenuItem.Name = "viewToolStripMenuItem";
             this.viewToolStripMenuItem.Size = new System.Drawing.Size(55, 24);
             this.viewToolStripMenuItem.Text = "View";
@@ -1152,30 +1179,12 @@
             this.cancel050ToolStripMenuItem.Text = "Cancel All 050";
             this.cancel050ToolStripMenuItem.Click += new System.EventHandler(this.cancel050ToolStripMenuItem_Click);
             // 
-            // dgvInsertFtH1
+            // handicapHistoryToolStripMenuItem
             // 
-            this.dgvInsertFtH1.AllowUserToAddRows = false;
-            this.dgvInsertFtH1.AllowUserToDeleteRows = false;
-            this.dgvInsertFtH1.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 7F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.dgvInsertFtH1.DefaultCellStyle = dataGridViewCellStyle1;
-            this.dgvInsertFtH1.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.dgvInsertFtH1.Location = new System.Drawing.Point(0, 0);
-            this.dgvInsertFtH1.Margin = new System.Windows.Forms.Padding(4);
-            this.dgvInsertFtH1.Name = "dgvInsertFtH1";
-            this.dgvInsertFtH1.ReadOnly = true;
-            this.dgvInsertFtH1.RowHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.None;
-            this.dgvInsertFtH1.RowHeadersVisible = false;
-            this.dgvInsertFtH1.RowHeadersWidth = 10;
-            this.dgvInsertFtH1.RowTemplate.Height = 15;
-            this.dgvInsertFtH1.Size = new System.Drawing.Size(233, 153);
-            this.dgvInsertFtH1.TabIndex = 10;
+            this.handicapHistoryToolStripMenuItem.Name = "handicapHistoryToolStripMenuItem";
+            this.handicapHistoryToolStripMenuItem.Size = new System.Drawing.Size(273, 26);
+            this.handicapHistoryToolStripMenuItem.Text = "Handicap History";
+            this.handicapHistoryToolStripMenuItem.Click += new System.EventHandler(this.handicapHistoryToolStripMenuItem_Click);
             // 
             // OverUnderScoreTimeForm
             // 
@@ -1201,6 +1210,7 @@
             this.splitContainer7.Panel2.ResumeLayout(false);
             ((System.ComponentModel.ISupportInitialize)(this.splitContainer7)).EndInit();
             this.splitContainer7.ResumeLayout(false);
+            ((System.ComponentModel.ISupportInitialize)(this.dgvInsertFtH1)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.dgvOuScoreRemainingTime)).EndInit();
             this.splitContainer4.Panel1.ResumeLayout(false);
             this.splitContainer4.Panel2.ResumeLayout(false);
@@ -1239,7 +1249,6 @@
             ((System.ComponentModel.ISupportInitialize)(this.dgvUnderPrice)).EndInit();
             this.menuStrip1.ResumeLayout(false);
             this.menuStrip1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.dgvInsertFtH1)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -1321,5 +1330,6 @@
         private System.Windows.Forms.ToolStripMenuItem ftToolStripMenuItem;
         private System.Windows.Forms.ToolStripMenuItem cancel050ToolStripMenuItem;
         private System.Windows.Forms.DataGridView dgvInsertFtH1;
+        private System.Windows.Forms.ToolStripMenuItem handicapHistoryToolStripMenuItem;
     }
 }
